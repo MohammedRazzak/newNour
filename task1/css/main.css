@@ -1,0 +1,425 @@
+h1,
+h2,
+h5,
+h4,
+hr,
+span,
+p {
+  margin: 0px;
+}
+
+body {
+  border-top: 2px solid #99d8d9;
+  padding: 0px !important;
+  background-color: #1bc47d;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+body .content {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 4px 2px 0px 2px;
+  /*Navigation Bar */
+}
+
+body .content nav {
+  margin: 0px;
+  height: 50px;
+  background-color: white;
+  margin: 0px !important;
+  padding: 10px;
+  border-bottom: 2px solid #e9e9ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .content nav div .navbar-brand img {
+  height: 20px;
+  width: 90px;
+}
+
+body .content nav div button {
+  background-color: #0062ff;
+  color: white;
+  height: 30px;
+  width: 90px;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+body .content nav form .sch {
+  background-color: #f1f1f5;
+  color: #92929d;
+}
+
+body .content nav form .sch i {
+  width: 4px;
+}
+
+body .content nav form button {
+  background-color: #0062ff;
+  color: white;
+  height: 30px;
+  width: 70px;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+body .content nav form button i {
+  width: 4px;
+  margin-right: 7px;
+}
+
+body .content nav form .button {
+  display: inline-block;
+  position: relative;
+  padding: 2px 5px;
+}
+
+body .content nav form .button__badge {
+  background-color: #fa3e3e;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .content nav form img {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+.content2 {
+  background-color: #fafafb;
+  width: 100%;
+  height: 100%;
+  margin: 0px 2px;
+  padding-top: 50px !important;
+}
+
+.content2 .container {
+  /*Breakcrumb*/
+  /*Progress*/
+  /*Block one Header*/
+  /*Block one*/
+  /*Block two Header*/
+  /*Block two */
+}
+
+.content2 .container .breadcrumb {
+  list-style: none;
+  background-color: transparent;
+}
+
+.content2 .container .breadcrumb .breadcrumb-item {
+  display: inline;
+}
+
++ .content2 .container .breadcrumb .breadcrumb-item::before {
+  content: ">";
+}
+
+.content2 .container .breadcrumb .breadcrumb-item a {
+  color: #92929d;
+}
+
+.content2 .container .breadcrumb .breadcrumb-item a:hover {
+  color: #0062ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content2 .container .row {
+  margin: 50px 0px 0px 25px;
+  padding-bottom: 50px;
+}
+
+.content2 .container .row .surv {
+  margin-right: 40px;
+}
+
+.content2 .container .row .surv h5 {
+  color: #5a5a65;
+  font-size: 12px;
+}
+
+.content2 .container .row .surv .five {
+  font-weight: bold;
+}
+
+.content2 .container .row .surv .progress {
+  height: 4px;
+  background-color: #e2e2ea;
+  width: 100px;
+}
+
+.content2 .container .row .surv .progress .progress-bar {
+  background-color: #3dd598;
+}
+
+.content2 .container div .creduis {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  display: inline-block;
+}
+
+.content2 .container div h2 {
+  color: #a461d8;
+  display: inline;
+  margin-left: 20px;
+}
+
+.content2 .container div button {
+  background-color: #0062ff;
+  color: white;
+  height: 30px;
+  width: 90px;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.content2 .container .block1 {
+  padding: 6px;
+  border-radius: 10px;
+  border: 2px solid #e9e9ee;
+  height: 400px;
+  position: relative;
+}
+
+.content2 .container .block1 .pblock {
+  background-color: #a461d8;
+  position: relative;
+  border-radius: 10px;
+  width: calc((100%));
+  padding: 80px 0px 40px 0px;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .content2 .container .block1 .pblock {
+    height: 60%;
+  }
+}
+
+.content2 .container .block1 .pblock form {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .content2 .container .block1 .pblock form {
+    font-size: 12px;
+  }
+}
+
+.content2 .container .block1 .pblock form label input[type="checkbox"] {
+  background: transparent;
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+@media screen and (max-width: 768px) {
+  .content2 .container .block1 .pblock form label input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.content2 .container .block1 .pblock .col-lg-4 {
+  padding: 19px 90px 90px 45px;
+}
+
+.content2 .container .block1 .pblock .col-lg-4 span {
+  color: white;
+  font-size: 12px;
+}
+
+.content2 .container .block1 .pblock .wblock {
+  background-color: white;
+  height: 60px;
+  width: calc((100%));
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -45px;
+  margin: 0px;
+}
+
+.content2 .container .block1 .pblock .wblock .col-lg-8 h5 {
+  font-weight: bold;
+}
+
+.content2 .container .block1 .pblock .wblock .col-lg-4 span {
+  color: #a461d8;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content2 .container .block1 .pblock .wblock .col-lg-4 .collaps {
+  background-color: #a461d8;
+}
+
+.content2 .container .block1 .wblock2 {
+  background-color: white;
+  height: 60px;
+  width: calc(100% - 12px);
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content2 .container .block1 .wblock2 .col-lg-11 h5 {
+  font-size: 12px;
+}
+
+.content2 .container .block1 .wblock2 .col-lg-1 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content2 .container .block1 .wblock2 .col-lg-1 .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.content2 .container .block1 .wblock2 .col-lg-1 .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.content2 .container div .creduis2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  position: absolute;
+  display: inline;
+}
+
+.content2 .container div .header2 {
+  color: #f91984;
+  display: inline;
+  font-weight: bold;
+}
+
+.content2 .container .block2 {
+  padding: 3px;
+  border-radius: 10px;
+  border: 2px solid #e9e9ee;
+  height: 300px;
+  position: relative;
+}
+
+.content2 .container .block2 .wblock2 {
+  background-color: white;
+  height: 60px;
+  width: calc((100%)-6px);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.content2 .container .block2 .wblock2:hover {
+  background-color: transparent;
+}
+
+.content2 .container .block2 .wblock2 .rt h5 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content2 .container .block2 .wblock2 .rt span {
+  font-size: 10px;
+}
+
+.content2 .container .block2 .wblock2 .lt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content2 .container .block2 .wblock2 .lt div span {
+  color: #f91984;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content2 .container .block2 .wblock2 .lt div .dropdown .btn {
+  background-color: #f91984;
+}
+
+.content2 .container .block2 .wblock2 .lt .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content2 .container .block2 .wblock2 .lt .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.content2 .container .block2 .wblock2 .lt .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
