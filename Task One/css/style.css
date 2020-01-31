@@ -8,6 +8,12 @@ body{
     font-family: 'GeoEditRegularItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
     text-transform:uppercase;
 }
+p,h1,h2,h6{
+    font-family: 'Oswald', sans-serif;
+}
+/*h1,h2,h6{
+    font-family: 'Playfair Display', serif;
+}*/
 .container0{
     background-color: #fcc201;
     color:white;
@@ -15,7 +21,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 450px;
+    border: 15px solid white;
+    box-sizing: border-box;
 }
 .container0 h2{
     display: inline;
@@ -139,3 +147,49 @@ a{
         font-size: 14px;
     }
 }
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding:50px 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.one,.two,.three{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+/*.container3 img{
+    border: 4px solid #fcc201;
+    box-sizing: border-box;  
+}*/
+.container3 .two img:first-child{
+    border: 4px solid #fcc201;
+    box-sizing: border-box;
+}
+.container3 .two img:last-child{
+    border: 4px solid white;
+    box-sizing: border-box;
+}
+.container3 .one img{
+   width:700px;  
+   height:400px; 
+}
+.container3 .two img{
+    width:350px;
+    height: 400px;
+}
+.container3 .three img{
+    width:700px;  
+    height:400px; 
+ }
+ @media only screen and (max-width: 600px) {
+    .container3 .two img{
+        width:700px;
+        height: 400px;
+    }   
+ }
+
+
