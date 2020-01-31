@@ -1,0 +1,141 @@
+/*background: linear-gradient(90deg, #fbaf23 0, #803300 100%);*/
+/*font-family: 'GeoEditRegularItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;*/
+/*color:#fcc201*/
+body{
+    color:#fcc201;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'GeoEditRegularItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+}
+.container0{
+    background-color: #fcc201;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.container0 h2{
+    display: inline;
+}
+.container0 .a::after{
+    content: "|";
+    display: inline;
+    color: black;
+   
+   
+}
+.container0 img{
+    width: 200px;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    box-sizing: border-box;
+    height: 500px;
+    margin:0px;
+}
+.content .left{
+    padding:10px 0 10px 30px;
+    
+}
+.left h1{
+    font-size: 70px;
+    line-height: 1.1;
+    padding:0px;
+    margin: 5px 5px 5px 0px;
+}
+.left .parag{
+    font-size: 15px; 
+    text-transform: capitalize;
+    padding:10px 0px 60px 50px; 
+    font-weight: normal;
+}
+.left .parag p span{
+    font-weight: bold;
+    font-size: 17px;
+}
+a{
+    text-decoration: none; 
+    color:#fcc201;
+}
+.left a::after{
+    content: " >>";
+}
+.left a:hover::after{
+    content: "";
+    display: block;
+    background-color: #fcc201;
+    height:2px;
+    width:150px;
+  
+}
+.right{
+    width:40%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    border-left:4px solid #fcc201;
+    border-radius: 0% 0% 0% 25%;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction:column;
+    }
+    .left h1{
+        font-size: 50px;
+        line-height: 1.1;
+        padding:0px;
+        margin: 5px 5px 5px 0px;
+    }
+    .left .parag{
+        font-size: 12px; 
+        text-transform: capitalize;
+        padding:10px 0px 60px 30px; 
+        font-weight: normal;
+    }
+    .left .parag p span{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .right img{
+       visibility: hidden;
+    }
+}
+
+.container2{
+    background-color:#fcc201 ;
+    color:black;
+    text-align: center;
+    height:200px;
+    padding:50px;
+}
+.container2 h1{
+    margin: 0px;
+    font-size: 40px;
+}
+.container2 p{
+    padding:0px 100px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .container2{
+        padding:10px;  
+    }
+    .container2 h1{
+        margin: 0px;
+        font-size: 27px;
+    }
+    .container2 p{
+        padding:0px ;
+        font-size: 14px;
+    }
+}
