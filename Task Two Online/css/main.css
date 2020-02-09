@@ -25,22 +25,34 @@ p {
 
 body {
   margin: 0px;
+  font-family: 'Dosis', sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 1;
 }
 
 ul {
-  font-family: 'Mukta', sans-serif;
+  width: 1200px;
   list-style-type: none;
   margin: 0;
   padding: 0 100px;
   overflow: hidden;
-  background-color: #333;
+  z-index: 12;
 }
 
 ul li {
   float: left;
 }
 
-ul li a, ul li .dropbtn {
+ul li a,
+ul li .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -48,20 +60,22 @@ ul li a, ul li .dropbtn {
   text-decoration: none;
 }
 
-ul li a:hover, ul li .dropbtn:hover {
-  background-color: #e0c31b;
-}
-
 ul .dropdown {
   display: inline-block;
 }
 
 ul .dropdown:hover {
-  background-color: #e0c31b;
+  background-color: #fff;
+  color: #000;
 }
 
 ul .dropdown:hover .dropdown-content {
   display: block;
+}
+
+ul .dropdown:hover .dropbtn {
+  background-color: #fff;
+  color: #000 !important;
 }
 
 ul .dropdown-content {
@@ -81,16 +95,17 @@ ul .dropdown-content a {
 }
 
 ul .dropdown-content a:hover {
-  background-color: #e0c31b;
+  background: #ddd;
+  color: #000;
 }
 
 .cover {
-  background-image: url(../images/images4.jpg);
-  height: 500px;
+  background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Righteous', cursive;
+  color: #fff;
+  height: 100vh;
 }
 
 .cover .overlay {
@@ -117,8 +132,6 @@ ul .dropdown-content a:hover {
 
 .cover .overlay h1 {
   font-size: 60px;
-  text-shadow: 4px 2px #e0c31b;
-  font-family: 'Dancing Script', cursive;
 }
 
 .cover .overlay p {
@@ -131,7 +144,7 @@ ul .dropdown-content a:hover {
   height: 40px;
   width: 120px;
   margin-top: 20px;
-  background-color: #e0c31b;
+  background-color: #fff;
 }
 
 .cover .overlay button h5 {
