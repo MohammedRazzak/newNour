@@ -1,0 +1,129 @@
+body{
+    text-transform:uppercase;
+    margin: 0px;
+}
+ol,h6{
+    padding: 0px;
+    margin:0px
+}
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0px 20px;
+      box-sizing: border-box;
+      margin: 0px;
+    }
+  }
+.container .breadcrumb {
+    list-style: none;
+    background-color: transparent;
+    margin:20px 0px;
+  }
+  .breadcrumb-item {
+    display: inline;
+  }
+  a{
+    text-decoration: none;
+    color:rgb(172, 167, 167);
+  }
+  .breadcrumb-item::after {
+    content: '\27A4';
+    padding:0px 10px;
+    color: rgb(168, 166, 163);
+  }
+  .breadcrumb-item:last-child::after {
+    content:"";
+  }
+  a:active{
+     color:black;
+  }
+  /*------------------------------------------*/
+  .content{
+      background-color:rgb(221, 221, 221);
+      box-sizing: border-box;
+      padding: 20px 0px;
+  }
+  .right{
+      width: 25%;
+  }
+  .left{
+      width: 65%;
+  }
+  @media screen and (max-width: 768px) {
+    .right{
+        width:100%;
+        box-sizing: border-box;
+        margin:0px;
+    }
+    .left{
+        width:100%;
+        box-sizing: border-box;
+        margin:0px;
+    }    
+  }
+  .container .section1{ 
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .section1 .right img{
+    height:100%;
+    width:300px;
+    border-left:4px solid #fcc201;
+    border-radius: 0% 0% 0% 25%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container .section1{
+        display: flex;
+        flex-direction: column-reverse;
+    }  
+    .container .section1 .right img{
+        width: 100%;
+        border: 0px;
+        border-radius: 0px;
+        height:150px;
+    } 
+  }
+   .container .section1 .left a{
+    text-decoration: none; 
+    color:#fcc201;
+}
+
+.left a::after{
+    content: " >>";
+}
+.container .section1 .left .table{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:20px ;
+}
+div span{
+    width:49%;
+}
+.table div{
+    display: flex;
+    justify-content: space-between; 
+    border:1px solid rgb(143, 139, 139);
+    border-top: 0px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.table div span:last-child{
+    color:normal;
+    color:rgb(138, 137, 137);
+    font-size: 12px;
+}
+.table div:first-child{
+    border-top:1px solid rgb(143, 139, 139);
+    border-radius: 6px 6px 0px 0px;
+}
+.table div:last-child{
+    border-radius:0px 0px 6px 6px ;
+}
