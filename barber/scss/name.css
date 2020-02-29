@@ -210,6 +210,7 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 @media screen and (max-width: 768px) {
   .owl-carousel .cover .overlay .container, .owl-carousel .cover1 .overlay .container, .owl-carousel .cover2 .overlay .container, .owl-theme .cover .overlay .container, .owl-theme .cover1 .overlay .container, .owl-theme .cover2 .overlay .container {
     max-width: 100%;
+    margin-left: 0px;
   }
 }
 
