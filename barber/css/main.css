@@ -1,0 +1,159 @@
+h1,
+h2,
+h5,
+h4,
+hr,
+span,
+p {
+  margin: 0px;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0px;
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: "Lato";
+}
+
+header {
+  background: transparent;
+  z-index: 12;
+  width: 100%;
+  position: absolute;
+  padding: 20px 0px;
+  position: fixed;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container ul li {
+  list-style: none;
+}
+
+header .container ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 50px 20px 0px;
+  text-decoration: none;
+}
+
+header .container ul li button {
+  background-color: #eb592d;
+  border: none;
+}
+
+header .container ul li button a {
+  padding: 20px 50px;
+}
+
+header .container ul li button:hover {
+  border: 1px solid #eb592d;
+  background-color: transparent;
+}
+
+header .container ul li button:hover a {
+  color: #eb592d;
+  padding: 20px 50px;
+}
+
+.cover {
+  background-image: url(../images/banner/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+.cover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cover .overlay .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 40%;
+}
+
+.cover .overlay .container h1 {
+  font-family: "Yeseva One";
+  font-size: 65px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  line-height: 75px;
+}
+
+.cover .overlay .container p {
+  margin-bottom: 30px;
+}
+
+.cover .overlay .container button {
+  background-color: #eb592d;
+  border: none;
+  padding: 20px 50px;
+}
+
+.cover .overlay .container button a {
+  text-decoration: none;
+  color: white;
+}
+
+.cover .overlay .container button:hover {
+  border: 1px solid #eb592d;
+  background-color: transparent;
+}
+
+.cover .overlay .container button:hover a {
+  color: #eb592d;
+}
+
+/*
+font-family: 'Yeseva One', ;
+font-family: 'Lato', ;
+*/
+/*# sourceMappingURL=main.css.map */

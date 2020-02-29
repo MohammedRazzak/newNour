@@ -1,0 +1,139 @@
+$maincolor:#eb592d;
+@mixin btn {
+    background-color: $maincolor;
+    border:none; 
+}
+@mixin btnhover {
+    border:1px solid $maincolor;
+    background-color: transparent;  
+}
+@mixin abtn {
+    
+}
+@mixin abtnhover {
+    
+}
+//reset margin and padding
+h1,
+h2,
+h5,
+h4,
+hr,
+span,
+p {
+    margin: 0px;
+}
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    @media screen and(max-width: 768px) {
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+}
+body{
+    margin: 0px;
+    font-family: 'Lato', ;
+}
+header{
+    background: transparent; 
+    z-index: 12;
+    width:100%;
+    position: absolute;
+    padding:20px 0px;  
+    position:fixed;
+        .container{
+        display: flex;
+        justify-content: space-between;
+    ul{
+        list-style-type: none;
+    margin: 0;
+    
+    overflow: hidden;
+        display: flex;
+        li{
+            list-style: none;
+            
+            a{
+                display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 20px 50px 20px 0px;
+            text-decoration: none;
+            }
+            button{
+                @include btn;
+                a{
+                    padding: 20px 50px;
+                }
+                &:hover{
+                    @include btnhover;
+                    a{
+                        color:$maincolor;
+                        padding: 20px 50px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+}
+.cover{
+    background-image: url(../images/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    color:white;
+    .overlay{
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        .container{
+            box-sizing: border-box;
+            max-width: 40%;
+            
+            
+            
+                h1{
+                font-family: 'Yeseva One', ;
+                font-size: 65px;
+                font-weight: 900;
+                margin-bottom: 10px;
+                line-height: 75px;
+                }
+        p{
+            margin-bottom: 30px;
+        }
+        button{
+            @include btn;
+            padding: 20px 50px;
+            a{
+               
+                text-decoration: none;
+                color:white;
+            }
+            &:hover{
+                @include btnhover;
+                a{
+                    color:$maincolor;
+                }
+            }
+        }
+    }
+    
+}
+}
+/*
+font-family: 'Yeseva One', ;
+font-family: 'Lato', ;
+*/
