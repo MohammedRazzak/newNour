@@ -167,7 +167,7 @@ header,.navbar{
             margin-left: 200px;
             @media screen and(max-width: 768px) {
               max-width:100%; 
-              margin-left:0px; 
+              margin-left:20px; 
             }
                 h1{
                 font-family: 'Yeseva One', ;
@@ -237,10 +237,10 @@ header,.navbar{
                 border:15px solid white;
                 border-width: 15px 0px 0px 15px;
                 left:450px;
-                top:795px;
+                top:845px;
                 @media screen and(max-width: 768px) {
                     left:250px;
-                    top:712px;  
+                    top:761px;  
                 }
         }}
         .right{

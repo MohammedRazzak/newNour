@@ -209,7 +209,7 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 @media screen and (max-width: 768px) {
   .owl-carousel .cover .overlay .container, .owl-carousel .cover1 .overlay .container, .owl-carousel .cover2 .overlay .container, .owl-theme .cover .overlay .container, .owl-theme .cover1 .overlay .container, .owl-theme .cover2 .overlay .container {
     max-width: 100%;
-    margin-left: 0px;
+    margin-left: 20px;
   }
 }
 
@@ -305,13 +305,13 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
   border: 15px solid white;
   border-width: 15px 0px 0px 15px;
   left: 450px;
-  top: 795px;
+  top: 845px;
 }
 
 @media screen and (max-width: 768px) {
   .section-two .container .left .r-img {
     left: 250px;
-    top: 712px;
+    top: 761px;
   }
 }
 
