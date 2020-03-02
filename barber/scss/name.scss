@@ -2,10 +2,9 @@ $maincolor:#eb592d;
 $mainbg:#fdf9f6;
 @mixin btn {
     background-color: $maincolor;
-    border:none; 
+    border:1px solid #eb592d; 
 }
 @mixin btnhover {
-    border:1px solid $maincolor;
     background-color: transparent;  
 }
 
@@ -133,8 +132,8 @@ header,.navbar{
  }
  .owl-dots{
      position: absolute;
-     top:550px;
-     left:560px;
+     top:610px;
+     left:580px;
      @media screen and(max-width: 768px) {
          top:30;
         left:0;

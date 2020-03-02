@@ -32,7 +32,7 @@ function showMenu() {
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 520) {
+        if (scroll > 300) {
           $(".black").css("background" , "black");
         }
   

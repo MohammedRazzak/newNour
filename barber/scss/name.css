@@ -98,7 +98,7 @@ header .container ul li a, .navbar .container ul li a {
 
 header .container ul li button, .navbar .container ul li button {
   background-color: #eb592d;
-  border: none;
+  border: 1px solid #eb592d;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,7 +112,6 @@ header .container ul li button a, .navbar .container ul li button a {
 }
 
 header .container ul li button:hover, .navbar .container ul li button:hover {
-  border: 1px solid #eb592d;
   background-color: transparent;
 }
 
@@ -154,8 +153,8 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 
 .owl-carousel .owl-dots, .owl-theme .owl-dots {
   position: absolute;
-  top: 550px;
-  left: 560px;
+  top: 610px;
+  left: 580px;
 }
 
 @media screen and (max-width: 768px) {
@@ -235,7 +234,7 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 
 .owl-carousel .cover .overlay .container button, .owl-carousel .cover1 .overlay .container button, .owl-carousel .cover2 .overlay .container button, .owl-theme .cover .overlay .container button, .owl-theme .cover1 .overlay .container button, .owl-theme .cover2 .overlay .container button {
   background-color: #eb592d;
-  border: none;
+  border: 1px solid #eb592d;
   padding: 20px 50px;
 }
 
@@ -245,7 +244,6 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 }
 
 .owl-carousel .cover .overlay .container button:hover, .owl-carousel .cover1 .overlay .container button:hover, .owl-carousel .cover2 .overlay .container button:hover, .owl-theme .cover .overlay .container button:hover, .owl-theme .cover1 .overlay .container button:hover, .owl-theme .cover2 .overlay .container button:hover {
-  border: 1px solid #eb592d;
   background-color: transparent;
 }
 
@@ -356,7 +354,7 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 
 .section-two .container .right button {
   background-color: #eb592d;
-  border: none;
+  border: 1px solid #eb592d;
   padding: 20px 50px;
 }
 
@@ -366,7 +364,6 @@ header .container ul li button:hover a, .navbar .container ul li button:hover a 
 }
 
 .section-two .container .right button:hover {
-  border: 1px solid #eb592d;
   background-color: transparent;
 }
 
