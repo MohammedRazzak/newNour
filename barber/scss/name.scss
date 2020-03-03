@@ -2,10 +2,11 @@ $maincolor:#eb592d;
 $mainbg:#fdf9f6;
 @mixin btn {
     background-color: $maincolor;
-    border:1px solid #eb592d; 
+    border: 1px solid #eb592d;
 }
+
 @mixin btnhover {
-    background-color: transparent;  
+    background-color: transparent;
 }
 
 //reset margin and padding
@@ -18,96 +19,96 @@ span,
 p {
     margin: 0px;
 }
+
 .container {
     width: 1180px;
     margin: 0 auto;
-    @media screen and(max-width: 768px) {
+    @media only screen and(max-width: 1179px) {
         width: 100%;
         padding: 0px 20px;
         box-sizing: border-box;
         margin: 0px;
     }
 }
-body{
+
+body {
     margin: 0px;
     font-family: 'Lato', ;
 }
 
-header,.navbar{
-    --background: transparent; 
-    
+header,
+.navbar {
+    --background: transparent;
     background: var(--background);
     z-index: 12;
-    width:100%;
+    width: 100%;
     position: absolute;
-    padding:20px 0px;  
-    position:fixed;
-    
-        .container{
+    padding: 20px 0px;
+    position: fixed;
+    .container {
         display: flex;
         justify-content: space-between;
-        img{
+        img {
             @media screen and(max-width: 768px) {
                 position: fixed;
-            }  
+            }
         }
-    ul{
-        list-style-type: none;
-    margin: 0;
-    
-    overflow: hidden;
-        display: flex;
-        @media screen and(max-width: 768px) {
-            display: none;
-            width: 100%;
-            background: #fff;
-            color:black;
-            width: 80% !important;
-            position: fixed;
-            top: 78px;
-            right:20px;
-            margin: 0px;
-            height: 50%;
-            text-align: left;
-           
-        }
-        li{
-            list-style: none;
-            a{
-                display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 20px 50px 20px 0px;
-            text-decoration: none;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
             @media screen and(max-width: 768px) {
-                color:black;
+                display: none;
+                width: 100%;
+                background: #fff;
+                color: black;
+                width: 80% !important;
+                position: fixed;
+                top: 78px;
+                right: 20px;
+                margin: 0px;
+                height: 50%;
+                text-align: left;
             }
-            }
-            button{
-                @include btn;
-                @media screen and(max-width: 768px) {
-                    display: none;}
-                a{
-                    padding: 20px 50px;
+            li {
+                list-style: none;
+                a {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 20px 50px 20px 0px;
+                    text-decoration: none;
+                    @media screen and(max-width: 768px) {
+                        color: black;
+                    }
                 }
-                &:hover{
-                    @include btnhover;
-                    a{
-                        color:$maincolor;
+                button {
+                    @include btn;
+                    @media screen and(max-width: 768px) {
+                        display: none;
+                    }
+                    a {
                         padding: 20px 50px;
+                    }
+                    &:hover {
+                        @include btnhover;
+                        a {
+                            color: $maincolor;
+                            padding: 20px 50px;
+                        }
                     }
                 }
             }
-
         }
     }
+    @media screen and(max-width: 768px) {
+        width: 100%;
+        background: none;
+        position: absolute;
+    }
 }
-@media screen and(max-width: 768px) {
-    width: 100%;
-    background: none;
-    position: absolute;
-}
-}
+
 #res {
     @media screen and(max-width: 768px) {
         background-image: url(../images/Untitled-2.png);
@@ -120,179 +121,178 @@ header,.navbar{
         right: 20px;
         top: 20px;
         z-index: 12;
-        
     }
 }
-.nav-scrolled{
-    --background:black; 
+
+.nav-scrolled {
+    --background: black;
 }
-.owl-carousel,.owl-theme{
- .owl-nav{
-     display: none;
- }
- .owl-dots{
-     position: absolute;
-     top:610px;
-     left:580px;
-     @media screen and(max-width: 768px) {
-         top:30;
-        left:0;
-        padding:0px 0px 0px 200px;
-         display:flex;
-     }
- }   
-.cover,.cover1,.cover2 {
-    background-image: url(../images/banner/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    color:white;
-    .overlay{
-        background-color: rgba(0, 0, 0, .6);
-        width: 100%;
-        height: 100%;
+
+.owl-carousel,
+.owl-theme {
+    .owl-nav {
+        display: none;
+    }
+    .owl-dots {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        z-index: 20;
-        .container{
-            box-sizing: border-box;
-            max-width: 40%;
-            z-index: 20;
-            padding-left:0px;
-            margin-left: 200px;
-            @media screen and(max-width: 768px) {
-              max-width:100%; 
-              margin-left:20px; 
-            }
-                h1{
-                font-family: 'Yeseva One', ;
-                font-size: 55px;
-                font-weight: 900;
-                margin-bottom: 10px;
-                line-height: 75px;
-                @media screen and(max-width: 768px) {
-                    font-size: 35px; 
-                    line-height: 45px;  
-                }
-
-                }
-        p{
-            margin-bottom: 30px;
+        top: 610px;
+        left: 580px;
+        @media screen and(max-width: 768px) {
+            top: 30;
+            left: 0;
+            padding: 0px 0px 0px 200px;
+            display: flex;
         }
-        button{
-            @include btn;
-            padding: 20px 50px;
-            a{
-               
-                text-decoration: none;
-                color:white;
-            }
-            &:hover{
-                @include btnhover;
-                a{
-                    color:$maincolor;
+    }
+    .cover,
+    .cover1,
+    .cover2 {
+        background-image: url(../images/banner/banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        color: white;
+        .overlay {
+            background-color: rgba(0, 0, 0, .6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            z-index: 20;
+            .container {
+                box-sizing: border-box;
+                max-width: 40%;
+                z-index: 20;
+                padding-left: 0px;
+                margin-left: 200px;
+                @media screen and(max-width: 768px) {
+                    max-width: 100%;
+                    margin-left: 20px;
+                }
+                h1 {
+                    font-family: 'Yeseva One', ;
+                    font-size: 55px;
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                    line-height: 75px;
+                    @media screen and(max-width: 768px) {
+                        font-size: 35px;
+                        line-height: 45px;
+                    }
+                }
+                p {
+                    margin-bottom: 30px;
+                }
+                button {
+                    @include btn;
+                    padding: 20px 50px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        @include btnhover;
+                        a {
+                            color: $maincolor;
+                        }
+                    }
                 }
             }
         }
     }
-    
-}
-}
-.cover1{
-    background-image: url(../images/banner/banner2.png);
-}
-.cover2{
-    background-image: url(../images/banner/banner3.png);
-}
+    .cover1 {
+        background-image: url(../images/banner/banner2.png);
+    }
+    .cover2 {
+        background-image: url(../images/banner/banner3.png);
+    }
 }
 
-.section-two{
+.section-two {
     background-color: $mainbg;
-    
-    .container{
+    .container {
         display: flex;
         justify-content: space-between;
-        padding:100px 0px;
+        padding: 100px 0px;
         @media screen and(max-width: 768px) {
-            display:flex ;
+            display: flex;
             flex-direction: column;
-            padding:40px 20px;
+            padding: 40px 20px;
         }
-        .left{
-            width:50%;
+        .left {
+            width: 50%;
             @media screen and(max-width: 768px) {
-                width:100%;
+                width: 100%;
             }
-            .l-img{
-             position: relative;   
-              
+            .l-img {
+                position: relative;
             }
-            .r-img{ 
+            .r-img {
                 position: absolute;
-                border:15px solid white;
+                border: 15px solid white;
                 border-width: 15px 0px 0px 15px;
-                left:450px;
-                top:845px;
+                left: 450px;
+                top: 845px;
                 @media screen and(max-width: 768px) {
-                    left:250px;
-                    top:761px;  
+                    left: 250px;
+                    top: 761px;
                 }
-        }}
-        .right{
-            width:40%;
+            }
+        }
+        .right {
+            width: 40%;
             margin-top: 40px;
             @media screen and(max-width: 768px) {
-                width:100%;
+                width: 100%;
             }
-            h1{
+            h1 {
                 font-size: 50px;
-    font-weight: 400;
-    line-height: 51px;
-    color: #222222;
-    font-family: "Yeseva One", cursive;
-    margin-bottom: 40px;
+                font-weight: 400;
+                line-height: 51px;
+                color: #222222;
+                font-family: "Yeseva One", cursive;
+                margin-bottom: 40px;
             }
-            p{}
-            h2{
+            p {}
+            h2 {
                 font-family: "Yeseva One", cursive;
                 font-size: 30px;
                 font-weight: 400;
                 color: #252219;
                 margin-bottom: 55px;
                 margin-top: 40px;
-                span{
+                span {
                     font-family: "Lato", sans-serif;
-                     color: #252219;
-                     font-size: 20px;
-                     margin-left: 6px;
-                     display: inline-block;
+                    color: #252219;
+                    font-size: 20px;
+                    margin-left: 6px;
+                    display: inline-block;
                 }
             }
-            button{
+            button {
                 @include btn;
                 padding: 20px 50px;
-                a{
-                   
+                a {
                     text-decoration: none;
-                    color:white;
+                    color: white;
                 }
-                &:hover{
+                &:hover {
                     @include btnhover;
-                    a{
-                        color:$maincolor;
+                    a {
+                        color: $maincolor;
                     }
                 }
             }
-        
-
         }
     }
 }
+
+
 /*
 font-family: 'Yeseva One', ;
 font-family: 'Lato', ;
