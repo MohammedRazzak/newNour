@@ -288,6 +288,62 @@ body {
         }
     }
     }
+
+//Our-Updates
+.container{
+    .our-updates{
+        @include flex;
+        .box-one{
+            .bg-box-one{
+                background-image:url(../images/blog-12-450x325.jpg);
+                width:381px;
+                height:275px;
+            }
+            span{}
+            h3{}
+            p{}
+            a{
+                &:hover{}
+            }
+        }
+        .box-two{
+             .bg-box-two{
+                background-image:url(../images/post_1-450x325.jpg);
+                width:381px;
+                height:275px;
+            }
+            span{}
+            h3{}
+            p{}
+            a{
+                &:hover{}
+            }
+        }
+        .box-three{
+             .bg-box-three{
+                background-image:url(../images/post_2-450x325.jpg);
+                width:381px;
+                height:275px;
+            }
+            span{}
+            h3{}
+            p{}
+            a{
+                &:hover{}
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
  //Footer
 .footer-container{
     background:#272727;
@@ -297,7 +353,7 @@ body {
         .footer{
             @include flex;
             padding:100px 0px;
-            align-items: unset;
+            align-items:flex-start;
             box-sizing: border-box;
             text-align: left;
            .col-one{
@@ -319,7 +375,7 @@ body {
             @include flex;
             flex-direction: column;
             width: 32%;
-            align-items: unset;
+            align-items: flex-start;
             @media only screen and (max-width: 768px) {
                 width:100%;
             }
@@ -407,7 +463,7 @@ body {
                         height: 51px;
                          width:314px;
                          box-sizing: border-box;
-                         padding:5px 15px 5px 45px;
+                         padding:5px 75px 5px 45px;
                          margin-bottom: 5px;
                          &::placeholder{
                             color:rgb(80, 80, 80);
@@ -468,48 +524,3 @@ body {
     }
 }
 
-//Our-Updates
-.container{
-    .our-updates{
-        @include flex;
-        .box-one{
-            .bg-box-one{
-                background-image:url(../images/blog-12-450x325.jpg);
-                width:381px;
-                height:275px;
-            }
-            span{}
-            h3{}
-            p{}
-            a{
-                &:hover{}
-            }
-        }
-        .box-two{
-             .bg-box-two{
-                background-image:url(../images/post_1-450x325.jpg);
-                width:381px;
-                height:275px;
-            }
-            span{}
-            h3{}
-            p{}
-            a{
-                &:hover{}
-            }
-        }
-        .box-three{
-             .bg-box-three{
-                background-image:url(../images/post_2-450x325.jpg);
-                width:381px;
-                height:275px;
-            }
-            span{}
-            h3{}
-            p{}
-            a{
-                &:hover{}
-            }
-        }
-    }
-}

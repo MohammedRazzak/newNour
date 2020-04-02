@@ -18,6 +18,17 @@
     line-height:40px;
     margin-bottom:15px;
 }
+@mixin hr {
+    background-color:$main-first-color;
+    height:3px;
+    left:398.328px;
+    margin-left:0px;
+    position:absolute;
+    transform:matrix(1, 0, 0, 1, -50, 0);
+    width:100px;
+    z-index:9;
+    
+}
 
 @mixin reset-list {
     margin: 0;

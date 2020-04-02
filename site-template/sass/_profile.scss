@@ -1,0 +1,191 @@
+.profile{
+    
+    .bg-image{
+        background-image: url(../images/slider1.jpg);
+        height:210px;
+        width:100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        .layout{
+            background-color: rgba(0, 0, 0, .4);
+            width: 100%;
+            height:100%;
+            
+        }
+    }
+
+    .container{
+        font-family: 'Poppins',sans-serif;
+        position: relative;
+        @include flex;
+        flex-direction: row;
+        .side-profile{
+            background-color: $second-color;
+            border-radius: 3px;
+            padding:25px 30px 30px 25px;
+            width:480px;
+            z-index: 1;
+            position: relative;
+            top:-600px;
+            font-size: 12px;
+            line-height:15.6px;
+            box-sizing: border-box;
+            @include flex;
+            flex-direction: column;
+            font-family: 'Poppins',sans-serif;
+            border: 1px solid #f1f1f1;
+            @media only screen and (max-width: 768px) {
+               background-color: transparent;
+                top:-90px;
+                border: none;
+                width: 100%;
+            }
+            
+                .add-img
+            {
+                margin-bottom: 2px;
+                    img{
+                        height:110px;
+                        width:110px;
+                        border-radius: 50%;
+                        text-align: center;
+                        @media only screen and (max-width: 768px) {
+                            border: 10px solid $main-first-color;
+                        }
+                        
+                    }
+                }
+                h1{
+                    font-size:24px;
+                    font-weight:600;
+                    line-height:15.6px;
+                    margin: 10px 0px;
+                }
+                span{
+                    font-size:15px;
+                    line-height:21px;
+                }
+                
+                .btns{
+                    @include flex;
+                    align-items: flex-start;
+                    width:100%;
+                    margin: 30px 0px 10px 0px;
+                    
+                    .btn1,.btn2{
+                        border-radius: 50px;
+                        font-family: 'Poppins',sans-serif;
+                        color:$second-color;
+                        background-color: $main-first-color;
+                        border:none;
+                        font-size:14px;
+                        font-weight:600;
+                        border: 1px solid transparent;
+                        padding: 8px 15px;
+                       width: 49%;
+                        box-sizing: border-box;
+
+                    }
+                    .btn2{
+                        border: 1px solid $main-first-color;
+                        background-color: $second-color;
+                        color:$main-first-color;
+                        box-sizing: border-box;
+
+                    }
+                }
+                .follow-collect{
+                    margin-bottom: 30px;
+                    width: 100%;
+                    .follow{
+                        @include flex;
+                         width: 100%;
+                        margin: 10px 0px;
+                        align-items: flex-start;
+                       
+                        span{
+                            font-size:15px;
+                            line-height:17.25px;
+                           
+                        
+                        }
+                    }    
+                }
+                
+            }
+
+
+
+
+            .img-collection{
+                margin:0px 0px 50px 50px;
+                @include flex;
+                width:100%; 
+                flex-direction: column;
+                align-items: flex-start;
+                position: relative;
+                @media only screen and (max-width: 768px) {
+                    margin:0px 0px 50px 0px;
+                }
+                .row-one,.row-two,.row-three{
+                    @include flex;
+                    width:100%; 
+                    margin-top: 20px;
+                    &:first-child{
+                        margin-top: 50px;   
+                    }
+                    
+                    .col-1,.col-2{ 
+                        @include flex;
+                        flex-direction: column;
+                        width:49%;
+                        height: 350px;
+                        background-image: url(../images/gl_8.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        @media only screen and (max-width: 768px) {
+                            width:100%;
+                            margin-top: 50px;
+                        } 
+                       
+                        .overlay{
+                            background-color: transparent;
+                            width: 100%;
+                            height:25%;
+                            position: relative;
+                            bottom:-262px;
+                            p{
+                                position: absolute;
+                                bottom: 0px;
+                                color: transparent;
+                                margin: 8px;
+                                text-align: center;
+                               
+                            }
+                              
+                        } 
+                        &:hover{
+                         
+                            .overlay{
+                                background-color: rgba(252, 61, 4, 0.7);
+                            }  
+                            p{
+                                color: white;
+                            }   
+                        }
+                       
+                    }
+                   
+    
+                }
+            
+                
+    
+            }
+           
+        }
+    
+        }
+        
