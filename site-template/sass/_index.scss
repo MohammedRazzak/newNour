@@ -120,18 +120,10 @@ body {
                     padding-bottom: 7px;
                     margin-bottom: 52px;
                 h2{
-                    color: $main-first-color;
-                    font-size: 17px;
-                    margin-bottom: 10px;
+                    @include orange-header;
                 }
                 h1{
-                    color: #101010;
-                    margin-bottom: 15px;
-                    font-size: 50px;
-                    line-height: 40px;
-                    text-transform: uppercase!important;
-                    font-size: 36px;
-                    font-weight:700!important;
+                    @include black-header;
                     
                     position: relative;
                     &::after{
@@ -220,11 +212,8 @@ body {
         .contact-header{
             padding-bottom:120px;
             h4{
-                color: $main-first-color;
                 position: relative;
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 26px;
+                @include orange-header;
                 &::after{
                     content:"";
                     width:100px;

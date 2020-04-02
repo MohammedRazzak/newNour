@@ -466,18 +466,24 @@ body {
 
 .container .sectiontwo .left .leftheaders h2 {
   color: #ea4c23;
-  font-size: 17px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 26px;
+  line-height: 26px;
   margin-bottom: 10px;
 }
 
 .container .sectiontwo .left .leftheaders h1 {
-  color: #101010;
-  margin-bottom: 15px;
-  font-size: 50px;
-  line-height: 40px;
   text-transform: uppercase !important;
-  font-size: 36px;
   font-weight: 700 !important;
+  color: #101010;
+  font-size: 36px;
+  font-weight: 700;
+  height: 80px;
+  line-height: 40px;
+  margin-bottom: 15px;
   position: relative;
 }
 
@@ -614,11 +620,15 @@ body {
 }
 
 .container-two .contact-us .contact-header h4 {
-  color: #ea4c23;
   position: relative;
+  color: #ea4c23;
+  display: block;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 600;
+  height: 26px;
   line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .container-two .contact-us .contact-header h4::after {
