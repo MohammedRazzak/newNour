@@ -1134,6 +1134,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1156,7 +1159,7 @@ body {
   width: 480px;
   z-index: 1;
   position: relative;
-  top: -550px;
+  top: -150px;
   font-size: 12px;
   line-height: 15.6px;
   -webkit-box-sizing: border-box;
@@ -1366,7 +1369,7 @@ body {
   }
 }
 
-.profile .container .img-collection .row-one, .profile .container .img-collection .row-two, .profile .container .img-collection .row-three {
+.profile .container .img-collection .row-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,12 +1379,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .profile .container .img-collection .row-one, .profile .container .img-collection .row-two, .profile .container .img-collection .row-three {
+  .profile .container .img-collection .row-one {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1389,17 +1393,17 @@ body {
   }
 }
 
-.profile .container .img-collection .row-one:first-child, .profile .container .img-collection .row-two:first-child, .profile .container .img-collection .row-three:first-child {
+.profile .container .img-collection .row-one:first-child {
   margin-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  .profile .container .img-collection .row-one:first-child, .profile .container .img-collection .row-two:first-child, .profile .container .img-collection .row-three:first-child {
+  .profile .container .img-collection .row-one:first-child {
     margin-top: 0px;
   }
 }
 
-.profile .container .img-collection .row-one .col-1, .profile .container .img-collection .row-one .col-2, .profile .container .img-collection .row-two .col-1, .profile .container .img-collection .row-two .col-2, .profile .container .img-collection .row-three .col-1, .profile .container .img-collection .row-three .col-2 {
+.profile .container .img-collection .row-one .col-1, .profile .container .img-collection .row-one .col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1415,6 +1419,7 @@ body {
           flex-direction: column;
   width: 49%;
   height: 350px;
+  margin-top: 20px;
   background-image: url(../images/gl_8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1422,7 +1427,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .profile .container .img-collection .row-one .col-1, .profile .container .img-collection .row-one .col-2, .profile .container .img-collection .row-two .col-1, .profile .container .img-collection .row-two .col-2, .profile .container .img-collection .row-three .col-1, .profile .container .img-collection .row-three .col-2 {
+  .profile .container .img-collection .row-one .col-1, .profile .container .img-collection .row-one .col-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1431,13 +1436,13 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .profile .container .img-collection .row-one .col-1, .profile .container .img-collection .row-one .col-2, .profile .container .img-collection .row-two .col-1, .profile .container .img-collection .row-two .col-2, .profile .container .img-collection .row-three .col-1, .profile .container .img-collection .row-three .col-2 {
+  .profile .container .img-collection .row-one .col-1, .profile .container .img-collection .row-one .col-2 {
     width: 100%;
     margin-top: 50px;
   }
 }
 
-.profile .container .img-collection .row-one .col-1 .overlay, .profile .container .img-collection .row-one .col-2 .overlay, .profile .container .img-collection .row-two .col-1 .overlay, .profile .container .img-collection .row-two .col-2 .overlay, .profile .container .img-collection .row-three .col-1 .overlay, .profile .container .img-collection .row-three .col-2 .overlay {
+.profile .container .img-collection .row-one .col-1 .overlay, .profile .container .img-collection .row-one .col-2 .overlay {
   background-color: transparent;
   width: 100%;
   height: 25%;
@@ -1445,7 +1450,7 @@ body {
   bottom: -262px;
 }
 
-.profile .container .img-collection .row-one .col-1 .overlay p, .profile .container .img-collection .row-one .col-2 .overlay p, .profile .container .img-collection .row-two .col-1 .overlay p, .profile .container .img-collection .row-two .col-2 .overlay p, .profile .container .img-collection .row-three .col-1 .overlay p, .profile .container .img-collection .row-three .col-2 .overlay p {
+.profile .container .img-collection .row-one .col-1 .overlay p, .profile .container .img-collection .row-one .col-2 .overlay p {
   position: absolute;
   bottom: 0px;
   color: transparent;
@@ -1453,11 +1458,11 @@ body {
   text-align: center;
 }
 
-.profile .container .img-collection .row-one .col-1:hover .overlay, .profile .container .img-collection .row-one .col-2:hover .overlay, .profile .container .img-collection .row-two .col-1:hover .overlay, .profile .container .img-collection .row-two .col-2:hover .overlay, .profile .container .img-collection .row-three .col-1:hover .overlay, .profile .container .img-collection .row-three .col-2:hover .overlay {
+.profile .container .img-collection .row-one .col-1:hover .overlay, .profile .container .img-collection .row-one .col-2:hover .overlay {
   background-color: rgba(252, 61, 4, 0.7);
 }
 
-.profile .container .img-collection .row-one .col-1:hover p, .profile .container .img-collection .row-one .col-2:hover p, .profile .container .img-collection .row-two .col-1:hover p, .profile .container .img-collection .row-two .col-2:hover p, .profile .container .img-collection .row-three .col-1:hover p, .profile .container .img-collection .row-three .col-2:hover p {
+.profile .container .img-collection .row-one .col-1:hover p, .profile .container .img-collection .row-one .col-2:hover p {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,6 +19,7 @@
         font-family: 'Poppins',sans-serif;
         position: relative;
         @include flex;
+        align-items: flex-start;
         flex-direction: row;
         .side-profile{
             background-color: $second-color;
@@ -27,7 +28,7 @@
             width:480px;
             z-index: 1;
             position: relative;
-            top:-550px;
+            top:-150px;
             font-size: 12px;
             line-height:15.6px;
             box-sizing: border-box;
@@ -134,10 +135,11 @@
                 @media only screen and (max-width: 768px) {
                     margin:0px 0px 50px 0px;
                 }
-                .row-one,.row-two,.row-three{
+                .row-one{
                     @include flex;
+                    flex-wrap: wrap;
                     width:100%; 
-                    margin-top: 20px;
+                   
                     &:first-child{
                         margin-top: 50px;  
                         @media only screen and (max-width: 768px) {
@@ -150,6 +152,7 @@
                         flex-direction: column;
                         width:49%;
                         height: 350px;
+                        margin-top: 20px;
                         background-image: url(../images/gl_8.jpg);
                         background-size: cover;
                         background-repeat: no-repeat;
@@ -189,9 +192,6 @@
                    
     
                 }
-            
-                
-    
             }
            
         }
