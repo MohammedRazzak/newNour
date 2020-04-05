@@ -1527,6 +1527,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {

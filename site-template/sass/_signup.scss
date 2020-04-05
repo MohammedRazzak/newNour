@@ -21,6 +21,7 @@
             .logo{
                 @include flex;
                 flex-direction: row;
+                margin: auto;
                 img{
                     width: 60px;//42px
                     height:60px;//40px
