@@ -2032,9 +2032,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2103,7 +2103,7 @@ body {
 }
 
 .section-three .container .competition-table .table {
-  width: 24%;
+  width: 22%;
   border: 1px solid white;
   border-radius: 5px;
   margin-bottom: 20px;
