@@ -1655,10 +1655,14 @@ body {
   }
 }
 
-.bg .overlay .container .sign-up form label {
+.bg .overlay .container .sign-up form label, .bg .overlay .container .sign-up form h6 {
   font-size: 12px;
   font-weight: 400;
   line-height: 15.6px;
+}
+
+.bg .overlay .container .sign-up form h6 {
+  margin-bottom: 20px;
 }
 
 .bg .overlay .container .sign-up form input {
@@ -1898,5 +1902,254 @@ body {
   padding: 7px 14px;
   border: none;
   margin-top: 50px;
+}
+
+.bg-img {
+  background-color: #ea4c23;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Poppins',sans-serif;
+}
+
+.bg-img .overlay {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-img .overlay {
+    padding: 0px;
+  }
+}
+
+.bg-img .overlay .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-img .overlay .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.bg-img .overlay .container .content h1 {
+  color: white;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 4px;
+}
+
+.bg-img .overlay .container .content p {
+  letter-spacing: 1px;
+}
+
+.container {
+  font-family: 'Poppins',sans-serif;
+}
+
+.container .section-two {
+  margin: 80px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-two {
+    margin: 80px 0px;
+  }
+}
+
+.container .section-two h1 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+}
+
+.container .section-two .description {
+  width: 70%;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-two .description {
+    width: 100%;
+  }
+}
+
+.container .section-two .description span {
+  color: #555;
+}
+
+.container .section-two .description p {
+  margin-top: 5px;
+}
+
+.container .section-two .description button {
+  background-color: #ea4c23;
+  color: white;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  border: none;
+  margin-top: 20px;
+}
+
+.container .section-two .participants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-two .participants {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-two .participants {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.container .section-two .participants div {
+  margin-right: 40px;
+}
+
+.container .section-two .participants div h4 {
+  font-size: 28px;
+}
+
+.container .section-two .participants div h6 {
+  font-size: 20px;
+  color: #555;
+  font-weight: 400;
+}
+
+.section-three {
+  background-color: #ea4c23;
+  width: 100%;
+  padding: 40px 0px 20px 0px;
+  color: white;
+}
+
+.section-three .container .competition-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-three .container .competition-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-three .container .competition-table .table {
+  width: 24%;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-three .container .competition-table .table {
+    width: 100%;
+  }
+}
+
+.section-three .container .competition-table .table h5 {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  padding: 5px;
+  color: #ea4c23;
+  font-size: 17px;
+}
+
+.section-three .container .competition-table .table ul {
+  padding: 0px;
+}
+
+.section-three .container .competition-table .table ul li {
+  list-style: none;
+  padding: 5px 5px 5px 10px;
+  position: relative;
+}
+
+.section-three .container .competition-table .table ul li::after {
+  content: "";
+  height: 1px;
+  background-color: #f1f1f1;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.section-three .container .competition-table .table ul li:last-child::after {
+  content: "";
+  height: 0px;
+  background-color: #f1f1f1;
+  width: 0%;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

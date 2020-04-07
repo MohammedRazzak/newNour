@@ -81,12 +81,15 @@
                     margin-top: 15px;
                     width: 100%;
                     position: relative;
-                    label{
+                    label,h6{
                         //margin-top:10px;  
                         font-size: 12px;
                         font-weight:400;
                         line-height:15.6px;
-                    }    
+                    }   
+                    h6{
+                        margin-bottom: 20px;   
+                    } 
                    
                     input{
                         border: none;
@@ -150,6 +153,7 @@
                         }
                        
                     } 
+                    
                     button{
                         background-color: $main-first-color;
                         color: white;
