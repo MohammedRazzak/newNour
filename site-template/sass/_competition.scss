@@ -33,9 +33,15 @@
                     font-weight:400;
                     line-height:40px;
                     letter-spacing:4px;
+                    @media only screen and (max-width: 768px) {
+                        font-size:30px;
+                    }
                 }
                 p{
                     letter-spacing:1px;
+                    @media only screen and (max-width: 768px) {
+                        font-size:12px;
+                    }
                 }
 
             }
@@ -55,6 +61,9 @@
             font-weight:700;
             line-height:40px;
             letter-spacing:0.5px;
+            @media only screen and (max-width: 768px) {
+                font-size:30px;
+            }
             
         }
         .description{
@@ -85,6 +94,7 @@
             align-items: flex-start;
             @media only screen and (max-width: 768px) {
                 flex-direction: row;
+              
             }
             div{
                 margin-right: 40px;
@@ -95,6 +105,9 @@
                     font-size:20px ;
                     color: #555 ;
                     font-weight: 400;
+                    @media only screen and (max-width: 768px) {
+                        font-size:15px;
+                    }
                 }
             }
         }

@@ -1966,8 +1966,20 @@ body {
   letter-spacing: 4px;
 }
 
+@media only screen and (max-width: 768px) {
+  .bg-img .overlay .container .content h1 {
+    font-size: 30px;
+  }
+}
+
 .bg-img .overlay .container .content p {
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-img .overlay .container .content p {
+    font-size: 12px;
+  }
 }
 
 .container {
@@ -1990,6 +2002,12 @@ body {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-two h1 {
+    font-size: 30px;
+  }
 }
 
 .container .section-two .description {
@@ -2067,6 +2085,12 @@ body {
   font-size: 20px;
   color: #555;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-two .participants div h6 {
+    font-size: 15px;
+  }
 }
 
 .section-three {
