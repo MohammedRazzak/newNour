@@ -92,9 +92,10 @@
         .participants{
             @include flex;
             align-items: flex-start;
+            width:30%;
             @media only screen and (max-width: 768px) {
                 flex-direction: row;
-              
+               width: 100%;
             }
             div{
                 margin-right: 40px;
@@ -106,7 +107,7 @@
                     color: #555 ;
                     font-weight: 400;
                     @media only screen and (max-width: 768px) {
-                        font-size:15px;
+                        font-size:12px;
                     }
                 }
             }

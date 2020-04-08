@@ -2053,6 +2053,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 30%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2070,6 +2071,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
   }
 }
 
@@ -2089,7 +2091,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .container .section-two .participants div h6 {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
