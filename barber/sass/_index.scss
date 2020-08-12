@@ -13,30 +13,6 @@ $maincolor:#eb592d;
 @mixin abtnhover {
     
 }
-//reset margin and padding
-h1,
-h2,
-h5,
-h4,
-hr,
-span,
-p {
-    margin: 0px;
-}
-.container {
-    width: 1180px;
-    margin: 0 auto;
-    @media screen and(max-width: 768px) {
-        width: 100%;
-        padding: 0px 20px;
-        box-sizing: border-box;
-        margin: 0px;
-    }
-}
-body{
-    margin: 0px;
-    font-family: 'Lato', ;
-}
 header{
     background: transparent; 
     z-index: 12;
@@ -44,15 +20,15 @@ header{
     position: absolute;
     padding:20px 0px;  
     position:fixed;
-        .container{
+    
+        .content{
         display: flex;
         justify-content: space-between;
+        img{
+            height:38px;
+        }
     ul{
-        list-style-type: none;
-    margin: 0;
-    
-    overflow: hidden;
-        display: flex;
+        
         li{
             list-style: none;
             
@@ -101,9 +77,6 @@ header{
         .container{
             box-sizing: border-box;
             max-width: 40%;
-            
-            
-            
                 h1{
                 font-family: 'Yeseva One', ;
                 font-size: 65px;
@@ -132,6 +105,10 @@ header{
     }
     
 }
+}
+
+footer{
+    background-color: black;
 }
 /*
 font-family: 'Yeseva One', ;

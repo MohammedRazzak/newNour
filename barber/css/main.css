@@ -1,11 +1,117 @@
-h1,
-h2,
-h5,
-h4,
-hr,
-span,
-p {
-  margin: 0px;
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Black-03.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-BlackOblique-04.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Book-01.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-BookOblique-02.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Heavy-05.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-HeavyOblique-06.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Light-07.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-LightOblique-08.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Medium-09.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-MediumOblique-10.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Oblique-11.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Roman-12.ttf");
 }
 
 .container {
@@ -23,9 +129,203 @@ p {
   }
 }
 
+.hide-resposive {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-resposive {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  display: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-desktop {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
 body {
   margin: 0px;
-  font-family: "Lato";
+  font-family: avenir !important;
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-bottom: 40px;
+  }
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.input-widget label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-widget input {
+  width: 100%;
+  outline: none;
+  height: 64px;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 40px;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  color: #8d9397;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  padding: 0px 5px;
+  font-size: 16px;
+}
+
+textarea {
+  padding: 5px;
+}
+
+.button {
+  height: 35px;
+  background: #eb592d;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  border: 0px;
+}
+
+.button.secondary {
+  background: #73D09A;
+}
+
+/*SEHHATEC*/
+.purple-short-hr {
+  border: none;
+  background-color: #eb592d;
+  height: 1px;
+  width: 970px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .purple-short-hr {
+    width: 100%;
+  }
+}
+
+.purple-long-hr {
+  border: none;
+  background-color: #eb592d;
+  height: 1px;
+  width: 1170px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .purple-long-hr {
+    width: 100%;
+  }
+}
+
+.gray-short-hr {
+  border: none;
+  height: 1px;
+  width: 970px;
+  background-color: #e9e9e9;
+  margin: 30px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  .gray-short-hr {
+    width: 100%;
+  }
+}
+
+.h2-sehhatec {
+  font-size: 22px;
+  color: #eb592d;
+}
+
+@media only screen and (max-width: 992px) {
+  .h2-sehhatec {
+    font-size: 20px;
+  }
+}
+
+input {
+  font-size: 18px;
+  color: #eb592d;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #eb592d;
+}
+
+input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #eb592d;
+}
+
+input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #eb592d;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: #eb592d;
+}
+
+textarea {
+  resize: none;
 }
 
 header {
@@ -37,7 +337,7 @@ header {
   position: fixed;
 }
 
-header .container {
+header .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,20 +346,15 @@ header .container {
           justify-content: space-between;
 }
 
-header .container ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .content img {
+  height: 38px;
 }
 
-header .container ul li {
+header .content ul li {
   list-style: none;
 }
 
-header .container ul li a {
+header .content ul li a {
   display: inline-block;
   color: white;
   text-align: center;
@@ -67,21 +362,21 @@ header .container ul li a {
   text-decoration: none;
 }
 
-header .container ul li button {
+header .content ul li button {
   background-color: #eb592d;
   border: none;
 }
 
-header .container ul li button a {
+header .content ul li button a {
   padding: 20px 50px;
 }
 
-header .container ul li button:hover {
+header .content ul li button:hover {
   border: 1px solid #eb592d;
   background-color: transparent;
 }
 
-header .container ul li button:hover a {
+header .content ul li button:hover a {
   color: #eb592d;
   padding: 20px 50px;
 }
@@ -150,6 +445,10 @@ header .container ul li button:hover a {
 
 .cover .overlay .container button:hover a {
   color: #eb592d;
+}
+
+footer {
+  background-color: black;
 }
 
 /*
