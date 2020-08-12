@@ -12,27 +12,27 @@ img {
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;;
     src: url("../fonts/Avenir-Black-03.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-BlackOblique-04.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-Book-01.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-BookOblique-02.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-Heavy-05.ttf");
 }
 
@@ -42,22 +42,22 @@ img {
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-Light-07.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-LightOblique-08.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-Medium-09.ttf");
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-MediumOblique-10.ttf");
 }
 
@@ -67,7 +67,7 @@ img {
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: 'Lato', ;
     src: url("../fonts/Avenir-Roman-12.ttf");
 }
 .container {
@@ -106,7 +106,8 @@ h6 {
 
 body {
     margin: 0px;
-    font-family: avenir !important;
+    font-family: 'Lato' !important ;
+    font-family: 'Lato', sans-serif;
     background: #ffffff;
     @media only screen and (max-width: 992px) {
         padding-bottom: 40px;
@@ -156,6 +157,13 @@ textarea {
     letter-spacing: 0.03em;
     font-size: 14px;
     border: 0px;
+    box-sizing: border-box;
+    &:hover{
+        border: 1px solid $maincolor;
+        background-color: transparent;
+        color:$maincolor;
+        box-sizing: border-box;
+    }
     &.secondary {
         background: $green-color;
     }
