@@ -799,7 +799,7 @@ header .content ul li button {
   }
 }
 
-.barbers .content .barbers-description-boxes .box:hover .box-img img:hover {
+.barbers .content .barbers-description-boxes .box:hover .box-img img {
   width: 100%;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -879,15 +879,6 @@ header .content ul li button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.barbers .content .barbers-description-boxes .box .box-description:hover .box-img img:hover {
-  width: 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  overflow: hidden;
 }
 
 .barbers .content .barbers-description-boxes .box .box-description h2 {

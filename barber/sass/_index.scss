@@ -245,12 +245,11 @@ header{
                 &:hover{
                     .box-img{
                         img{
-                            &:hover{
                                 width: 100%;
                                 transform: scale(1.1);
                                 transition: 0.3s;
                                 overflow: hidden;
-                            }
+                            
                         }
                     }
                 }
@@ -279,18 +278,6 @@ header{
                     background: #fdf9f6;
                     padding: 36px 0 35px 0;
                     width: 100%;
-                    &:hover{
-                        .box-img{
-                            img{
-                                &:hover{
-                                    width: 100%;
-                                    transform: scale(1.1);
-                                    transition: 0.3s;
-                                    overflow: hidden;
-                                }
-                            }
-                        }
-                    }
                     h2{
                         font-size: 25px;
                         font-weight: 400;
