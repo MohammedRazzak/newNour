@@ -234,6 +234,7 @@ header{
         .barbers-description-boxes{
             @include flex;
             overflow: hidden;
+
             .box{
                 @include flex;
                 flex-direction: column;
@@ -241,10 +242,21 @@ header{
                 box-sizing: border-box;
                 overflow: hidden;
                 position: relative;
+                &:hover{
+                    .box-img{
+                        img{
+                            &:hover{
+                                width: 100%;
+                                transform: scale(1.1);
+                                transition: 0.3s;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
                 .box-img{
-                    @include flex;
+                @include flex;
                 flex-direction: column;
-               
                 overflow: hidden;
                 height: 367px;           
                     img{
@@ -259,18 +271,6 @@ header{
                             overflow: hidden;
                         }
                     }
-                    .icon-div{
-                        background-color: white;
-                        padding:20px 25px;
-                        border-radius: 50%;
-                        position: absolute;
-                        top:170px;
-                        box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
-                        i{
-                           // position: absolute;
-                            color:$maincolor;
-                        }
-                    }
                 }    
                 .box-description{
                     @include flex-center;
@@ -279,11 +279,23 @@ header{
                     background: #fdf9f6;
                     padding: 36px 0 35px 0;
                     width: 100%;
+                    &:hover{
+                        .box-img{
+                            img{
+                                &:hover{
+                                    width: 100%;
+                                    transform: scale(1.1);
+                                    transition: 0.3s;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
                     h2{
                         font-size: 25px;
-    font-weight: 400;
-    line-height: 1.2em;
-    margin-bottom: 8px;
+                        font-weight: 400;
+                        line-height: 1.2em;
+                        margin-bottom: 8px;
                     }
                     p{
                         font-size: 18px;
@@ -296,6 +308,8 @@ header{
         }
     }
 }
+
+
 /*FOOTER*/
 footer{
     background-color: $dark-gray;
