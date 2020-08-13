@@ -153,7 +153,10 @@ img {
   }
 }
 
-p,
+p {
+  margin: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -161,6 +164,7 @@ h4,
 h5,
 h6 {
   margin: 0px;
+  font-family: 'Yeseva One', cursive;
 }
 
 body {
@@ -254,6 +258,24 @@ textarea {
   background: #73D09A;
 }
 
+.reverse-button {
+  border: 1px solid #eb592d;
+  background-color: transparent;
+  color: #eb592d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 35px;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.reverse-button:hover {
+  background: #eb592d;
+  color: #fff;
+  border: 0px;
+}
+
 /*SEHHATEC*/
 .purple-short-hr {
   border: none;
@@ -317,26 +339,50 @@ input {
 
 input::-webkit-input-placeholder {
   font-size: 18px;
-  color: #eb592d;
+  color: #c1c1c1;
 }
 
 input:-ms-input-placeholder {
   font-size: 18px;
-  color: #eb592d;
+  color: #c1c1c1;
 }
 
 input::-ms-input-placeholder {
   font-size: 18px;
-  color: #eb592d;
+  color: #c1c1c1;
 }
 
 input::placeholder {
   font-size: 18px;
-  color: #eb592d;
+  color: #c1c1c1;
 }
 
 textarea {
   resize: none;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea:-ms-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea::-ms-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea::placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+i {
+  color: #8f9195;
 }
 
 header {
@@ -895,6 +941,163 @@ header .content ul li button {
   text-align: center;
 }
 
+/*form*/
+.form {
+  padding: 150px 0px 120px 0px;
+  background: #fdf9f6;
+}
+
+.form h3 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 51px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+
+.form .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .form .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.form .content .make-appointment-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .form .content .make-appointment-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.form .content .make-appointment-inputs input, .form .content .make-appointment-inputs textarea {
+  resize: none;
+  height: 50px;
+  width: 567px;
+  border: 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #c1c1c1;
+  padding-left: 10px;
+  color: #000;
+  background: transparent;
+  margin-bottom: 32px;
+}
+
+.form .content .make-appointment-inputs input::-webkit-input-placeholder, .form .content .make-appointment-inputs textarea::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+
+.form .content .make-appointment-inputs input:-ms-input-placeholder, .form .content .make-appointment-inputs textarea:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.form .content .make-appointment-inputs input::-ms-input-placeholder, .form .content .make-appointment-inputs textarea::-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.form .content .make-appointment-inputs input::placeholder, .form .content .make-appointment-inputs textarea::placeholder {
+  color: #c1c1c1;
+}
+
+.form .content .make-appointment-inputs textarea {
+  height: 97px;
+}
+
+.form .content .make-appointment-inputs p {
+  width: 390px;
+  margin-bottom: 40px;
+  color: #464444;
+  line-height: 30px;
+}
+
+.form .content .make-appointment-inputs button {
+  width: 185px;
+  height: 60px;
+}
+
+.form .content .details div {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.form .content .details div h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #4a4948;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.form .content .details div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 350px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #7f7f7f;
+  font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 992px) {
+  .form .content .details div p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.form .content .details div p span {
+  width: 50%;
+}
+
 /*FOOTER*/
 footer {
   background-color: #0d0e0f;
@@ -1319,4 +1522,237 @@ font-family: 'Lato', ;
 /*.owl-carousel,.owl-theme{
     height: 900px;
 }*/
+.cover {
+  background-image: url(../images/banner/bradcam.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+  height: 380px;
+  color: white;
+}
+
+.cover .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cover .overlay .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cover .overlay .container .content {
+  max-width: 50%;
+}
+
+.cover .overlay .container .content h1 {
+  font-family: "Yeseva One";
+  font-size: 65px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  line-height: 75px;
+}
+
+.google-maps {
+  padding: 130px 0px 100px 0px;
+}
+
+.get-in-touch {
+  padding: 130px 0px 100px 0px;
+}
+
+.get-in-touch h2 {
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #1F1F1F;
+}
+
+.get-in-touch .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .get-in-touch .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.get-in-touch .content .get-in-touch-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .get-in-touch .content .get-in-touch-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.get-in-touch .content .get-in-touch-inputs input, .get-in-touch .content .get-in-touch-inputs textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e5e6e9;
+  padding: 6px 12px 6px 18px;
+  width: 698px;
+  height: 171px;
+  margin-bottom: 30px;
+}
+
+.get-in-touch .content .get-in-touch-inputs input {
+  height: 48px;
+}
+
+.get-in-touch .content .get-in-touch-inputs .two-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .get-in-touch .content .get-in-touch-inputs .two-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.get-in-touch .content .get-in-touch-inputs .two-inputs input {
+  width: 318px;
+}
+
+.get-in-touch .content .get-in-touch-inputs button {
+  width: 138px;
+  height: 59px;
+}
+
+.get-in-touch .content .get-in-touch-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .get-in-touch .content .get-in-touch-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.get-in-touch .content .get-in-touch-contacts .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 25px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .get-in-touch .content .get-in-touch-contacts .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.get-in-touch .content .get-in-touch-contacts .contact-info i {
+  margin-right: 20px;
+  font-size: 27px;
+}
+
+.get-in-touch .content .get-in-touch-contacts .contact-info div h5 {
+  font-size: 16px;
+  color: #2a2a2a;
+}
+
+.get-in-touch .content .get-in-touch-contacts .contact-info div p {
+  color: #8a8a8a;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
 /*# sourceMappingURL=main.css.map */

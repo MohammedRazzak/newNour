@@ -94,7 +94,9 @@ img {
     }
 }
 
-p,
+p{
+    margin: 0px;
+}
 h1,
 h2,
 h3,
@@ -102,6 +104,7 @@ h4,
 h5,
 h6 {
     margin: 0px;
+    font-family: 'Yeseva One', cursive;
 }
 
 body {
@@ -168,7 +171,21 @@ textarea {
         background: $green-color;
     }
 }
-
+.reverse-button{
+    border: 1px solid $maincolor;
+    background-color: transparent;
+    color:$maincolor;
+    box-sizing: border-box;
+    height: 35px;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    box-sizing: border-box;
+    &:hover{
+        background: $maincolor;
+        color: #fff;
+        border: 0px;
+    }
+}
 
 /*SEHHATEC*/
 
@@ -220,10 +237,17 @@ input {
     color: $maincolor;
     &::placeholder {
         font-size: 18px;
-        color: $maincolor;
+        color:#c1c1c1;
     }
 }
 
 textarea {
     resize: none;
+    &::placeholder {
+        font-size: 18px;
+        color:#c1c1c1;
+    }
+}
+i{
+    color:rgb(143, 145, 149);
 }
