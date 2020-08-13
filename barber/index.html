@@ -26,7 +26,7 @@
                     <li><a href="">Blog </a></li>
                     <li><a href="">Pages </a></li>
                     <li><a href="">Contact</a></li>
-                    <li><button  class="button">appointment</button></li>
+                    <li><button  class="button "  id="myImg" >appointment</button></li>
                 </ul>
             </div>
     </div>
@@ -259,6 +259,64 @@
         </div>
     </div>
 </footer>   
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content" id="img01">
+        <div class="make-appointment">
+            <h2>Make an Appointment</h2>
+            <div class="inputs">
+                <input type="date"  min="2005-01-01" max="2019-01-01"placeholder="Date">
+            </div>
+            <div class="inputs">
+                <select name="slct" id="slct" class="select-2">
+                    <option selected disabled>Choose services</option>
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="3">three</option>
+                </select>
+                <select name="slct" id="slct" class="select-2">
+                    <option selected disabled>Choose Barbers</option>
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="3">three</option>
+                </select>
+            </div>
+            
+            <div class="inputs">
+                <input type="text" placeholder="Your name">
+                <input type="text" placeholder="Phone no">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Your email">
+            </div>
+            <button class="button">Submit</button>
+        </div>
+            
+    </div>
+  </div>
+  <script>
+        var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  </script>
+  <script src="js/script.js"></script>  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script> 
