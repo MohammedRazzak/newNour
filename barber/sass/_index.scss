@@ -146,6 +146,9 @@ header{
                 margin-bottom: 21px;
                 font-size: 50px;
                 color:$header-color;
+                @media screen and (max-width: 992px) {
+                    font-size: 35px;
+                  }
             }
             p{
                 font-size: 16px;
@@ -180,6 +183,9 @@ header{
                 line-height: 51px;
                 color:$header-color;
                 margin-bottom: 21px;
+                @media screen and (max-width: 992px) {
+                   font-size: 35px;
+                 }
             }
             p{
                 line-height: 32px;
@@ -188,6 +194,9 @@ header{
                 font-size: 16px;
                 color:$gray-color;
                 margin-bottom: 13px;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                 }
             }
         }
         .our-service-description-boxes{
@@ -260,6 +269,9 @@ header{
     position: relative;
     height: 819px;
     padding: 144px 0px 100px 0px;
+    @media screen and (max-width: 992px) {
+        //height: 100%;
+     }
     .overlay-2{
         background: rgba(253, 249, 246,0.9);
         width: 100%;
@@ -287,6 +299,9 @@ header{
                     font-weight: 400;
                     margin-bottom: 13px;
                     width: 540px;
+                    @media screen and (max-width: 992px) {
+                        width: 100%;
+                     }
                 }
             }
             .owl-carousel{
@@ -326,6 +341,9 @@ header{
                     align-items: flex-start;
                     .hair-styling-price{
                         width:40%;
+                        @media screen and (max-width: 992px) {
+                            width: 100%;
+                         }
                         h2{
                             color:$maincolor;
                             margin-bottom: 35px;
@@ -337,6 +355,9 @@ header{
                             margin-bottom: 50px;
                             .img-div{
                                 margin-right: 20px;
+                                @media screen and (max-width: 992px) {
+                                    margin-right: 0px;
+                                 }
                                 img{}
                             }
                             .hair-style-info{
@@ -348,6 +369,9 @@ header{
                                     .dotted{
                                        color: #d7d4d1;
                                        margin: 0px 15px;
+                                       @media screen and (max-width: 992px) {
+                                        margin: 0px 10px;
+                                     }
                                     }
                                 p{
                                     font-size: 16px;
@@ -398,6 +422,9 @@ header{
                 box-sizing: border-box;
                 overflow: hidden;
                 position: relative;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                 }
                 &:hover{
                     .box-img{
                         img{
@@ -510,7 +537,10 @@ header{
         font-weight: 400;
         line-height: 51px;
         color: $header-color;
-        margin-bottom: 21px;        
+        margin-bottom: 21px;      
+        @media screen and (max-width: 992px) {
+            font-size: 25px;
+         }  
     }
     .content{
         @include flex;
@@ -530,6 +560,9 @@ header{
                 color: #000;
                 background: transparent;
                 margin-bottom: 32px;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                 }
                 &::placeholder{
                     color:#c1c1c1;
                 }
@@ -542,10 +575,18 @@ header{
                 margin-bottom: 40px;
                 color: #464444;
                 line-height: 30px;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                 }
             }
             button{
                 width:185px;
                 height:60px;
+                @media screen and (max-width: 992px) {
+                    width:120px;
+                    height:40px;
+                    margin-bottom: 20px;
+                 }
             }
         }
         .details{
@@ -564,6 +605,9 @@ header{
                     @include flex;
                     align-items: flex-start;
                     width:350px;
+                    @media screen and (max-width: 992px) {
+                        width: 100%;
+                     }
                     font-size: 16px;
                     line-height: 30px;
                     color: #7f7f7f;

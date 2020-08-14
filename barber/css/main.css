@@ -597,6 +597,12 @@ header .content ul li button {
   color: #222222;
 }
 
+@media screen and (max-width: 992px) {
+  .about-us .content .right h3 {
+    font-size: 35px;
+  }
+}
+
 .about-us .content .right p {
   font-size: 16px;
 }
@@ -655,6 +661,12 @@ header .content ul li button {
   margin-bottom: 21px;
 }
 
+@media screen and (max-width: 992px) {
+  .our-service .content .our-service-description h2 {
+    font-size: 35px;
+  }
+}
+
 .our-service .content .our-service-description p {
   line-height: 32px;
   text-align: center;
@@ -662,6 +674,12 @@ header .content ul li button {
   font-size: 16px;
   color: #959595;
   margin-bottom: 13px;
+}
+
+@media screen and (max-width: 992px) {
+  .our-service .content .our-service-description p {
+    width: 100%;
+  }
 }
 
 .our-service .content .our-service-description-boxes {
@@ -864,6 +882,12 @@ header .content ul li button {
   width: 540px;
 }
 
+@media screen and (max-width: 992px) {
+  .our-pricing .overlay-2 .content .our-pricing-description p {
+    width: 100%;
+  }
+}
+
 .our-pricing .overlay-2 .content .owl-carousel .owl-dots {
   visibility: hidden;
 }
@@ -929,6 +953,12 @@ header .content ul li button {
   width: 40%;
 }
 
+@media screen and (max-width: 992px) {
+  .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price {
+    width: 100%;
+  }
+}
+
 .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price h2 {
   color: #eb592d;
   margin-bottom: 35px;
@@ -964,6 +994,12 @@ header .content ul li button {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 992px) {
+  .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .img-div {
+    margin-right: 0px;
+  }
+}
+
 .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info span {
   font-size: 16px;
   color: #222222;
@@ -973,6 +1009,12 @@ header .content ul li button {
 .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info .dotted {
   color: #d7d4d1;
   margin: 0px 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info .dotted {
+    margin: 0px 10px;
+  }
 }
 
 .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info p {
@@ -1078,6 +1120,12 @@ header .content ul li button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .barbers .content .barbers-description-boxes .box {
+    width: 100%;
   }
 }
 
@@ -1269,6 +1317,12 @@ header .content ul li button {
   margin-bottom: 21px;
 }
 
+@media screen and (max-width: 992px) {
+  .form h3 {
+    font-size: 25px;
+  }
+}
+
 .form .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1334,6 +1388,12 @@ header .content ul li button {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 992px) {
+  .form .content .make-appointment-inputs input, .form .content .make-appointment-inputs textarea {
+    width: 100%;
+  }
+}
+
 .form .content .make-appointment-inputs input::-webkit-input-placeholder, .form .content .make-appointment-inputs textarea::-webkit-input-placeholder {
   color: #c1c1c1;
 }
@@ -1361,9 +1421,23 @@ header .content ul li button {
   line-height: 30px;
 }
 
+@media screen and (max-width: 992px) {
+  .form .content .make-appointment-inputs p {
+    width: 100%;
+  }
+}
+
 .form .content .make-appointment-inputs button {
   width: 185px;
   height: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .form .content .make-appointment-inputs button {
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .form .content .details div {
@@ -1405,6 +1479,12 @@ header .content ul li button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form .content .details div p {
+    width: 100%;
   }
 }
 
