@@ -385,6 +385,23 @@ i {
   color: #8f9195;
 }
 
+@media screen and (max-width: 992px) {
+  #res {
+    background-image: url("SW.png");
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-position: center;
+    -webkit-box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
+            box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+}
+
 header {
   background: transparent;
   z-index: 12;
@@ -392,6 +409,12 @@ header {
   position: absolute;
   padding: 20px 0px;
   position: fixed;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    visibility: hidden;
+  }
 }
 
 header .content {
@@ -424,7 +447,18 @@ header .content ul li button {
   width: 180px;
 }
 
-.cover {
+.owl-carousel .owl-nav {
+  visibility: hidden;
+}
+
+.owl-carousel .owl-dots {
+  position: relative;
+  top: -80px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.owl-carousel .cover, .owl-carousel .cover1, .owl-carousel .cover2 {
   background-image: url(../images/banner/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -433,7 +467,7 @@ header .content ul li button {
   color: white;
 }
 
-.cover .overlay {
+.owl-carousel .cover .overlay, .owl-carousel .cover1 .overlay, .owl-carousel .cover2 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
@@ -452,16 +486,22 @@ header .content ul li button {
           flex-direction: column;
 }
 
-.cover .overlay .container {
+.owl-carousel .cover .overlay .container, .owl-carousel .cover1 .overlay .container, .owl-carousel .cover2 .overlay .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.cover .overlay .container .content {
+.owl-carousel .cover .overlay .container .content, .owl-carousel .cover1 .overlay .container .content, .owl-carousel .cover2 .overlay .container .content {
   max-width: 50%;
 }
 
-.cover .overlay .container .content h1 {
+@media screen and (max-width: 992px) {
+  .owl-carousel .cover .overlay .container .content, .owl-carousel .cover1 .overlay .container .content, .owl-carousel .cover2 .overlay .container .content {
+    max-width: 100%;
+  }
+}
+
+.owl-carousel .cover .overlay .container .content h1, .owl-carousel .cover1 .overlay .container .content h1, .owl-carousel .cover2 .overlay .container .content h1 {
   font-family: "Yeseva One";
   font-size: 65px;
   font-weight: 900;
@@ -469,17 +509,41 @@ header .content ul li button {
   line-height: 75px;
 }
 
-.cover .overlay .container .content p {
+@media screen and (max-width: 992px) {
+  .owl-carousel .cover .overlay .container .content h1, .owl-carousel .cover1 .overlay .container .content h1, .owl-carousel .cover2 .overlay .container .content h1 {
+    font-size: 30px;
+    line-height: 55px;
+  }
+}
+
+.owl-carousel .cover .overlay .container .content p, .owl-carousel .cover1 .overlay .container .content p, .owl-carousel .cover2 .overlay .container .content p {
   margin-bottom: 30px;
 }
 
-.cover .overlay .container .content button {
+.owl-carousel .cover .overlay .container .content button, .owl-carousel .cover1 .overlay .container .content button, .owl-carousel .cover2 .overlay .container .content button {
   height: 60px;
   width: 180px;
 }
 
+@media screen and (max-width: 992px) {
+  .owl-carousel .cover .overlay .container .content button, .owl-carousel .cover1 .overlay .container .content button, .owl-carousel .cover2 .overlay .container .content button {
+    height: 40px;
+    width: 120px;
+  }
+}
+
+.cover1 {
+  background-image: url(../images/banner/banner2.png);
+}
+
+.cover2 {
+  background-image: url(../images/banner/banner3.png);
+}
+
+/*ABOUT US*/
 .about-us {
-  margin: 150px 0px;
+  padding: 150px 0px;
+  background: #FDF9F6;
 }
 
 .about-us .content {
@@ -519,6 +583,12 @@ header .content ul li button {
 
 .about-us .content .right {
   width: 472px;
+}
+
+@media screen and (max-width: 992px) {
+  .about-us .content .right {
+    width: 100%;
+  }
 }
 
 .about-us .content .right h3 {
@@ -745,6 +815,172 @@ header .content ul li button {
   text-align: center;
 }
 
+.our-pricing {
+  background-image: url(../images/banner/prise_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 819px;
+  padding: 144px 0px 100px 0px;
+}
+
+.our-pricing .overlay-2 {
+  background: rgba(253, 249, 246, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-pricing .overlay-2 .content .our-pricing-description {
+  margin-bottom: 53px;
+}
+
+.our-pricing .overlay-2 .content .our-pricing-description h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 51px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+
+.our-pricing .overlay-2 .content .our-pricing-description p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #7f7f7f;
+  font-weight: 400;
+  margin-bottom: 13px;
+  width: 540px;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .owl-dots {
+  visibility: hidden;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .owl-nav {
+  z-index: 150;
+  visibility: visible;
+  position: relative;
+  margin: initial;
+  width: 100px;
+  left: 90%;
+  top: -490px;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .owl-nav .owl-prev, .our-pricing .overlay-2 .content .owl-carousel .owl-nav .owl-next {
+  background-color: white;
+  color: #f39b80 !important;
+  border-radius: 4px;
+  border: 1px solid #ddc4c4;
+  height: 34px;
+  width: 34px;
+  font-size: 27px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .owl-nav .owl-prev:hover, .our-pricing .overlay-2 .content .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #f02081;
+  border: none;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .owl-nav .owl-prev:hover span, .our-pricing .overlay-2 .content .owl-carousel .owl-nav .owl-next:hover span {
+  color: white;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .our-pricing .overlay-2 .content .owl-carousel .hair-styling {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price {
+  width: 40%;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price h2 {
+  color: #eb592d;
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .img-div {
+  margin-right: 20px;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info span {
+  font-size: 16px;
+  color: #222222;
+  font-family: "Yeseva One", cursive;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info .dotted {
+  color: #d7d4d1;
+  margin: 0px 15px;
+}
+
+.our-pricing .overlay-2 .content .owl-carousel .hair-styling .hair-styling-price .details-price .hair-style-info p {
+  font-size: 16px;
+  color: #7f7f7f;
+  font-weight: 400;
+}
+
 /*barbers*/
 .barbers {
   padding: 150px 0px;
@@ -881,6 +1117,12 @@ header .content ul li button {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .barbers .content .barbers-description-boxes .box .box-img {
+    width: 100%;
+  }
+}
+
 .barbers .content .barbers-description-boxes .box .box-img img {
   width: 100%;
   height: 100% !important;
@@ -939,6 +1181,78 @@ header .content ul li button {
   font-weight: 400;
   color: #eb592d;
   text-align: center;
+}
+
+/*Testimonial*/
+.testimonial {
+  padding-bottom: 144px;
+}
+
+.testimonial h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 51px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.testimonial .owl-carousel .owl-dots {
+  visibility: hidden;
+}
+
+.testimonial .owl-carousel .content .testimonial-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+  .testimonial .owl-carousel .content .testimonial-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.testimonial .owl-carousel .content .testimonial-description p {
+  text-align: center;
+  color: #7f7f7f;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 40px;
+  font-style: italic;
+  width: 635px;
+}
+
+@media screen and (max-width: 992px) {
+  .testimonial .owl-carousel .content .testimonial-description p {
+    width: 100%;
+  }
+}
+
+.testimonial .owl-carousel .content .testimonial-description img {
+  height: 60px;
+  width: 60px;
+}
+
+.testimonial .owl-carousel .content .testimonial-description h5 {
+  color: #7f7f7f;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 21px;
 }
 
 /*form*/
@@ -1522,7 +1836,13 @@ font-family: 'Lato', ;
 /*.owl-carousel,.owl-theme{
     height: 900px;
 }*/
-.cover {
+.owl-dots {
+  position: absolute;
+  top: 600px;
+  right: 50%;
+}
+
+.contact-cover {
   background-image: url(../images/banner/bradcam.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1532,7 +1852,7 @@ font-family: 'Lato', ;
   color: white;
 }
 
-.cover .overlay {
+.contact-cover .overlay {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
@@ -1551,16 +1871,16 @@ font-family: 'Lato', ;
           flex-direction: column;
 }
 
-.cover .overlay .container {
+.contact-cover .overlay .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.cover .overlay .container .content {
+.contact-cover .overlay .container .content {
   max-width: 50%;
 }
 
-.cover .overlay .container .content h1 {
+.contact-cover .overlay .container .content h1 {
   font-family: "Yeseva One";
   font-size: 65px;
   font-weight: 900;

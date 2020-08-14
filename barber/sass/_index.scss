@@ -1,4 +1,18 @@
-
+#res {
+    @media screen and (max-width: 992px) {
+        background-image: url("SW.png");
+        height: 40px;
+        width: 40px;
+        border-radius: 5px;
+        background-position: center;
+        box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
+        display: block;
+        position: fixed;
+        left: 20px;
+        top: 20px;
+        z-index: 1;
+    }
+}
 header{
     background: transparent; 
     z-index: 12;
@@ -6,7 +20,9 @@ header{
     position: absolute;
     padding:20px 0px;  
     position:fixed;
-    
+    @media screen and (max-width: 992px) {
+       visibility: hidden;
+    }
         .content{
         display: flex;
         justify-content: space-between;
@@ -35,50 +51,79 @@ header{
     }
 }
 }
-.cover{
-    background-image: url(../images/banner/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    color:white;
-    .overlay{
-        background-color: rgba(0, 0, 0, .6);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        .container{
-            box-sizing: border-box;
-            //max-width: 40%;
-            .content{
-                max-width: 50%;
-                    h1{
-                    font-family: 'Yeseva One', ;
-                    font-size: 65px;
-                    font-weight: 900;
-                    margin-bottom: 10px;
-                    line-height: 75px;
-                    }
-            p{
-                margin-bottom: 30px;
-            }
-            button{
-                height: 60px;
-                        width: 180px;
-                
-            }
-        }   
+.owl-carousel{
+    .owl-nav{
+        visibility: hidden;
     }
-    
+    .owl-dots{
+        position: relative;
+        top:-80px;
+        transform: translate(50%,50%);
+    }
+    .cover,.cover1,.cover2{
+        background-image: url(../images/banner/banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        color:white;
+        .overlay{
+            background-color: rgba(0, 0, 0, .6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            .container{
+                box-sizing: border-box;
+                //max-width: 40%;
+                .content{
+                    max-width: 50%;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                     }
+                        h1{
+                        font-family: 'Yeseva One', ;
+                        font-size: 65px;
+                        font-weight: 900;
+                        margin-bottom: 10px;
+                        line-height: 75px;
+                        @media screen and (max-width: 992px) {
+                            font-size: 30px;
+                            line-height: 55px;
+                         }
+                        }
+                p{
+                    margin-bottom: 30px;
+                }
+                button{
+                    height: 60px;
+                    width: 180px;
+                    @media screen and (max-width: 992px) {
+                        height: 40px;
+                        width: 120px;
+                     }
+                    
+                }
+            }   
+        }
+        
+    }
+    }
+}    
+.cover1{
+    background-image: url(../images/banner/banner2.png);
 }
+.cover2{
+    background-image: url(../images/banner/banner3.png);
 }
+/*ABOUT US*/
 .about-us{
-    margin: 150px 0px;
+    padding: 150px 0px;
+    background: #FDF9F6;
     .content{
         @include flex;
         .left{
@@ -94,6 +139,9 @@ header{
         }
         .right{
             width: 472px;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+            }
             h3{
                 margin-bottom: 21px;
                 font-size: 50px;
@@ -205,7 +253,115 @@ header{
         }
     }
 }
-
+.our-pricing{
+    background-image: url(../images/banner/prise_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 819px;
+    padding: 144px 0px 100px 0px;
+    .overlay-2{
+        background: rgba(253, 249, 246,0.9);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        .content{
+            .our-pricing-description{
+                margin-bottom: 53px;
+                h2{
+                    font-size: 50px;
+                    font-weight: 400;
+                    line-height: 51px;
+                    color: #222222;
+                    margin-bottom: 21px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #7f7f7f;
+                    font-weight: 400;
+                    margin-bottom: 13px;
+                    width: 540px;
+                }
+            }
+            .owl-carousel{
+                .owl-dots{
+                    visibility: hidden;
+                }
+                .owl-nav{
+                    z-index: 150;
+                    visibility:visible;
+                    position: relative;
+                    margin: initial;
+                    width: 100px;
+                    left: 90%;
+                    top: -490px;
+                    .owl-prev,.owl-next{
+                        background-color: white;
+                        color: #f39b80 !important;
+                        border-radius: 4px;
+                        border: 1px solid rgb(221, 196, 196);
+                        height:34px;
+                        width: 34px;
+                        font-size: 27px;
+                        text-align: center;
+                        box-sizing: border-box;
+                        &:hover{
+                            background-color: rgb(240, 32, 129);
+                            border: none;
+                            span{
+                                color:white;
+                            }
+                        }
+                    }
+                }
+                .hair-styling{
+                    width:100%;
+                    @include flex;
+                    align-items: flex-start;
+                    .hair-styling-price{
+                        width:40%;
+                        h2{
+                            color:$maincolor;
+                            margin-bottom: 35px;
+                            font-size: 25px;
+                        }
+                        .details-price{
+                            @include flex;
+                            justify-content: flex-start;
+                            margin-bottom: 50px;
+                            .img-div{
+                                margin-right: 20px;
+                                img{}
+                            }
+                            .hair-style-info{
+                                    span{
+                                        font-size: 16px;
+                                        color: #222222;
+                                        font-family: "Yeseva One", cursive;
+                                    }
+                                    .dotted{
+                                       color: #d7d4d1;
+                                       margin: 0px 15px;
+                                    }
+                                p{
+                                    font-size: 16px;
+                                    color: #7f7f7f;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /*barbers*/
 .barbers{
@@ -257,7 +413,10 @@ header{
                 @include flex;
                 flex-direction: column;
                 overflow: hidden;
-                height: 367px;           
+                height: 367px;   
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }        
                     img{
                         width: 100%;
                         height: 100% !important;
@@ -295,6 +454,53 @@ header{
         }
     }
 }
+/*Testimonial*/
+
+    .testimonial{
+        padding-bottom: 144px;
+        h2{
+            font-size: 50px;
+        font-weight: 400;
+        line-height: 51px;
+        color: #222222;
+        text-align: center;
+        margin-bottom: 21px;
+        }
+        .owl-carousel{
+            .owl-dots{
+                visibility: hidden;
+            }
+            .content{
+                .testimonial-description{
+                    @include flex-center;
+                    flex-direction: column;
+                    p{
+                        text-align: center;
+                        color: #7f7f7f;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 32px;
+                        margin-bottom: 40px;
+                        font-style: italic;
+                        width: 635px;
+                        @media screen and (max-width: 992px) {
+                            width: 100%;
+                        }
+                    }
+                    img{
+                        height: 60px;
+                        width: 60px;
+                    }
+                    h5{
+                        color: #7f7f7f;
+                        font-weight: 400;
+                        font-size: 18px;
+                        margin-top: 21px;
+                    }
+                }
+            }
+        }    
+    }
 /*form*/
 .form{
     padding: 150px 0px 120px 0px;
@@ -674,3 +880,8 @@ font-family: 'Lato', ;
 /*.owl-carousel,.owl-theme{
     height: 900px;
 }*/
+.owl-dots{
+    position: absolute;
+    top:600px;
+    right:50%;
+}
