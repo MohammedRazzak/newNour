@@ -1,6 +1,6 @@
+
 #res {
     @media screen and (max-width: 992px) {
-        background-image: url("SW.png");
         height: 40px;
         width: 40px;
         border-radius: 5px;
@@ -21,8 +21,8 @@ header{
     padding:20px 0px;  
     position:fixed;
     @media screen and (max-width: 992px) {
-       visibility: hidden;
-    }
+        height:80px;
+     }
         .content{
         display: flex;
         justify-content: space-between;
@@ -124,17 +124,38 @@ header{
 .about-us{
     padding: 150px 0px;
     background: #FDF9F6;
+    @media screen and (max-width: 992px) {
+        padding:40px 0px;
+      }
     .content{
         @include flex;
+        @media screen and (max-width: 992px) {
+            align-items: flex-start;
+          }
         .left{
             position: relative;
+            @media screen and (max-width: 992px) {
+                margin-bottom: 20px;
+              }
             .r-img{
                 position: absolute;
                 border-left:15px solid white;
                 border-top:15px solid white ;
                 right:-160px;
-                top:85px;
+                bottom:0px;
                 box-sizing: border-box;
+                @media screen and (max-width: 992px) {
+                    width:145px;
+                    right:-40px;
+                    bottom:0px;
+                    height:182px;
+                  }
+            }
+            .l-img{
+                @media screen and (max-width: 992px) {
+                    width:280px;
+                  }
+                
             }
         }
         .right{
@@ -156,14 +177,24 @@ header{
             h2{
                 margin: 37px 0px 55px 0px;
                 font-size: 30px;
+                @media screen and (max-width: 992px) {
+                    font-size: 25px;
+                  }
                 span{
                     font-size: 20px;
+                    @media screen and (max-width: 992px) {
+                        font-size: 22px;
+                      }
                 }
             }
             button{
                 width: 153px;
                 height: 60px;
                 font-size: 16px;
+                @media screen and (max-width: 992px) {
+                    height: 40px;
+                    width: 120px;
+                 }
             }
         }
     }
@@ -172,6 +203,9 @@ header{
 /*OUR SERVICES*/
 .our-service{
     padding:150px 0px;
+    @media screen and (max-width: 992px) {
+        padding: 40px 0px;
+     }
     .content{
         .our-service-description{
             margin-bottom: 53px;
@@ -205,11 +239,15 @@ header{
             .box{
                 @include flex;
                 flex-direction: column;
-                border: 1px solid rgba(235, 89, 45,0.3);;
+                border: 1px solid rgba(235, 89, 45,0.3);
                 width: 350px;
                 box-sizing: border-box;
                 overflow: hidden;
                 position: relative;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                 }
                 .box-img{
                     @include flex;
                 flex-direction: column;
@@ -262,6 +300,7 @@ header{
         }
     }
 }
+/*OUR PRICING*/
 .our-pricing{
     background-image: url(../images/banner/prise_bg.png);
     background-repeat: no-repeat;
@@ -270,7 +309,9 @@ header{
     height: 819px;
     padding: 144px 0px 100px 0px;
     @media screen and (max-width: 992px) {
-        //height: 100%;
+       height:1200px;
+        padding: 40px 0px 40px 0px;
+        align-items: flex-start;
      }
     .overlay-2{
         background: rgba(253, 249, 246,0.9);
@@ -281,8 +322,17 @@ header{
         left: 0px;
         justify-content: center;
         display: flex;
+        align-items: flex-start;
         flex-direction: column;
+        @media screen and (max-width: 992px) {
+            align-items: flex-start;
+         }
         .content{
+            @media screen and (max-width: 992px) {
+                //height:1000px;
+                //padding: 40px 0px 40px 0px;
+                align-items: flex-start;
+             }
             .our-pricing-description{
                 margin-bottom: 53px;
                 h2{
@@ -316,6 +366,10 @@ header{
                     width: 100px;
                     left: 90%;
                     top: -490px;
+                    @media screen and (max-width: 992px) {
+                        left: 70%;
+                        top: -1110px;
+                     }
                     .owl-prev,.owl-next{
                         background-color: white;
                         color: #f39b80 !important;
@@ -326,11 +380,16 @@ header{
                         font-size: 27px;
                         text-align: center;
                         box-sizing: border-box;
+                        line-height: 0px;
+                        span{
+                            line-height: 0px;
+                        }
                         &:hover{
                             background-color: rgb(240, 32, 129);
                             border: none;
                             span{
                                 color:white;
+                                line-height: 0px;
                             }
                         }
                     }
@@ -358,7 +417,10 @@ header{
                                 @media screen and (max-width: 992px) {
                                     margin-right: 0px;
                                  }
-                                img{}
+                                img{
+                                    height:60px;
+                                    width: 60px;
+                                }
                             }
                             .hair-style-info{
                                     span{
@@ -369,8 +431,10 @@ header{
                                     .dotted{
                                        color: #d7d4d1;
                                        margin: 0px 15px;
+                                       font-size: 16px;
                                        @media screen and (max-width: 992px) {
                                         margin: 0px 10px;
+                                        font-size: 10px;
                                      }
                                     }
                                 p{
@@ -386,11 +450,11 @@ header{
         }
     }
 }
-
-/*barbers*/
+/*Barbers*/
 .barbers{
     padding:150px 0px;
     .content{
+        
         .barbers-description{
             margin-bottom: 53px;
             @include flex-center;
@@ -409,6 +473,9 @@ header{
                 font-size: 16px;
                 color:$gray-color;
                 margin-bottom: 13px;
+                @media screen and (max-width: 992px) {
+                    width:100%;
+                 }
             }
         }
         .barbers-description-boxes{
@@ -424,6 +491,9 @@ header{
                 position: relative;
                 @media screen and (max-width: 992px) {
                     width: 100%;
+                    border: 1px solid rgba(235, 89, 45,0.3);
+                    box-sizing: border-box;
+                    margin-bottom: 15px;
                  }
                 &:hover{
                     .box-img{
@@ -482,9 +552,12 @@ header{
     }
 }
 /*Testimonial*/
-
     .testimonial{
         padding-bottom: 144px;
+        
+        @media screen and (max-width: 992px) {
+            padding-bottom: 40px;
+         }
         h2{
             font-size: 50px;
         font-weight: 400;
@@ -620,7 +693,6 @@ header{
         }
     }
 }
-
 /*FOOTER*/
 footer{
     background-color: $dark-gray;
@@ -741,6 +813,9 @@ footer{
                 position: relative;
                 display: table;
                 border-collapse: separate;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
                 .form-control{
                     border-radius: initial;
                     width: 100%;
@@ -791,6 +866,9 @@ footer{
                 padding: 0px 4px ;
                 border: 1px solid #ddd;
                 box-sizing: border-box;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
                 &:focus {
                     outline:none;
                   }
@@ -803,6 +881,9 @@ footer{
                 padding: 18px;
                 border: 1px solid #ddd;
                 box-sizing: border-box;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
                 &:focus {
                     outline:none;
                     border-bottom:1px solid $gray-color;
@@ -921,8 +1002,10 @@ footer{
 font-family: 'Yeseva One', ;
 font-family: 'Lato', ;
 */
-/*.owl-carousel,.owl-theme{
-    height: 900px;
+/*owl-carousel,.owl-theme{
+    @media screen and (max-width: 992px) {
+        height:100vh;
+      }
 }*/
 .owl-dots{
     position: absolute;
