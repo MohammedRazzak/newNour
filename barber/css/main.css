@@ -413,6 +413,7 @@ header {
 @media screen and (max-width: 992px) {
   header {
     height: 80px;
+    width: 100% !important;
   }
 }
 
@@ -423,10 +424,53 @@ header .content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  header .content {
+    width: 100% !important;
+  }
+}
+
+header .content .icon {
+  display: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .content .icon {
+    display: block;
+  }
+}
+
+header .content .icon i {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .content .icon i {
+    display: block;
+  }
 }
 
 header .content img {
   height: 38px;
+}
+
+header .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  header .content ul {
+    background-color: #1F1F1F;
+    padding: 20px;
+    text-align: center;
+    display: none;
+  }
 }
 
 header .content ul li {
@@ -439,6 +483,13 @@ header .content ul li a {
   text-align: center;
   padding: 20px 50px 20px 0px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .content ul li a {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 header .content ul li button {

@@ -18,25 +18,25 @@ sectionOneObserver.observe(sectionOne);*/
 
 
  /*Responsive Menue*/
-function showMenu() {
-    var x = document.getElementById("no");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+ function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y=document.querySelector(".topnav img");
+  var z=document.querySelector(".topnav");
+  var w=document.querySelector(".topnav .icon i")
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display="block";
+    z.style.alignItems="center";
+    w.classList.remove("fa-times");
+    w.classList.add("fa-bars");
   } else {
-    x.className = "topnav";
+    x.style.display = "block";
+    y.style.display="block";
+    z.style.alignItems="flex-start";
+    w.classList.remove("fa-bars");
+    w.classList.add("fa-times");
   }
 }
-
 
 
 $(document).ready(function(){
